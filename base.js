@@ -7,45 +7,45 @@ $(document).ready(function() {
 	}
 
 	items=[];
-	items.push({"name":"chicken meat", "owned":0, "showinvt":false}); //0
-	items.push({"name":"iron chicken meat", "owned":0, "showinvt":false}); //1
-	items.push({"name":"gold chicken meat", "owned":0, "showinvt":false}); //2
-	items.push({"name":"diamond chicken meat", "owned":0, "showinvt":false}); //3
-	items.push({"name":"emerald chicken meat", "owned":0, "showinvt":false}); //4
-	items.push({"name":"hardened chicken meat", "owned":0, "showinvt":false}); //5
-	items.push({"name":"hardened iron chicken meat", "owned":0, "showinvt":false}); //6
-	items.push({"name":"hardened gold chicken meat", "owned":0, "showinvt":false}); //7
-	items.push({"name":"hardened diamond chicken meat", "owned":0, "showinvt":false}); //8
-	items.push({"name":"hardened emerald chicken meat", "owned":0, "showinvt":false}); //9
-	items.push({"name":"chicken nugget", "owned":0, "showinvt":false}); //10
-	items.push({"name":"iron chicken nugget", "owned":0, "showinvt":false}); //11
-	items.push({"name":"gold chicken nugget", "owned":0, "showinvt":false}); //12
-	items.push({"name":"diamond chicken nugget", "owned":0, "showinvt":false}); //13
-	items.push({"name":"emerald chicken nugget", "owned":0, "showinvt":false}); //14
-	items.push({"name":"furnace", "owned":0, "showinvt":false}); //15
-	items.push({"name":"workbench", "owned":0, "showinvt":false}); //16
-	items.push({"name":"scroll", "owned":0, "showinvt":false}); //17
-	items.push({"name":"robots", "owned":0, "showinvt":false}); //18
-	items.push({"name":"furnace2", "owned":0, "showinvt":false}); //19
-	items.push({"name":"portal", "owned":0, "showinvt":false}); //20
-	items.push({"name":"furnace3", "owned":0, "showinvt":false}); //21
-	items.push({"name":"scroll2", "owned":0, "showinvt":false}); //22
-	items.push({"name":"ancient scroll", "owned":0, "showinvt":false}); //23
-	items.push({"name":"wheat", "owned":0, "showinvt":false}); //24
-	items.push({"name":"medicine", "owned":0, "showinvt":false}); //25
-	items.push({"name":"teleportation device", "owned":0, "showinvt":false}); //26
-	items.push({"name":"furnace4", "owned":0, "showinvt":false}); //27
-	items.push({"name":"compass", "owned":0, "showinvt":false}); //28
+	items.push({"name":"鸡肉", "owned":0, "showinvt":false}); //0
+	items.push({"name":"铁之鸡肉", "owned":0, "showinvt":false}); //1
+	items.push({"name":"金之鸡肉", "owned":0, "showinvt":false}); //2
+	items.push({"name":"钻石之鸡肉", "owned":0, "showinvt":false}); //3
+	items.push({"name":"翡翠之鸡肉", "owned":0, "showinvt":false}); //4
+	items.push({"name":"硬化鸡肉", "owned":0, "showinvt":false}); //5
+	items.push({"name":"硬化铁之鸡肉", "owned":0, "showinvt":false}); //6
+	items.push({"name":"硬化金之鸡肉", "owned":0, "showinvt":false}); //7
+	items.push({"name":"硬化钻石之鸡肉", "owned":0, "showinvt":false}); //8
+	items.push({"name":"硬化翡翠之鸡肉", "owned":0, "showinvt":false}); //9
+	items.push({"name":"鸡块", "owned":0, "showinvt":false}); //10
+	items.push({"name":"铁之鸡块", "owned":0, "showinvt":false}); //11
+	items.push({"name":"金之鸡块", "owned":0, "showinvt":false}); //12
+	items.push({"name":"钻石之鸡块", "owned":0, "showinvt":false}); //13
+	items.push({"name":"翡翠之鸡块", "owned":0, "showinvt":false}); //14
+	items.push({"name":"炉子", "owned":0, "showinvt":false}); //15
+	items.push({"name":"工作台", "owned":0, "showinvt":false}); //16
+	items.push({"name":"卷轴", "owned":0, "showinvt":false}); //17
+	items.push({"name":"机器人", "owned":0, "showinvt":false}); //18
+	items.push({"name":"炉子2", "owned":0, "showinvt":false}); //19
+	items.push({"name":"传送门", "owned":0, "showinvt":false}); //20
+	items.push({"name":"炉子3", "owned":0, "showinvt":false}); //21
+	items.push({"name":"卷轴2", "owned":0, "showinvt":false}); //22
+	items.push({"name":"远古卷轴", "owned":0, "showinvt":false}); //23
+	items.push({"name":"谷物", "owned":0, "showinvt":false}); //24
+	items.push({"name":"药物", "owned":0, "showinvt":false}); //25
+	items.push({"name":"传送装置", "owned":0, "showinvt":false}); //26
+	items.push({"name":"炉子4", "owned":0, "showinvt":false}); //27
+	items.push({"name":"指南针", "owned":0, "showinvt":false}); //28
 	
 	skills=[];
-	skills.push({"name":"Speed", "owned":false, "desc":"Killing chickens is two seconds faster now"}); //0
-	skills.push({"name":"Cooking", "owned":false, "desc":"Using furnace is two seconds faster now"}); //1
-	skills.push({"name":"Mechanics", "owned":false, "desc":"Now you can make a robot to slay chickens automatically"}); //2
-	skills.push({"name":"Exploration", "owned":false, "level":0, "desc":"You will explore {km} km instead of 5 km each time you explore further"}); //3
-	skills.push({"name":"Armory", "owned":false, "desc":"Now you can make some armors"}); //4
-	skills.push({"name":"Statistics", "owned":false, "desc":"Now you can do some statistics job"}); //5
-	skills.push({"name":"Teleportation", "owned":false, "desc":"Now you can use the teleportation device"}); //6
-	skills.push({"name":"Metabolism", "owned":false, "desc":"Iron chicken nugget heals more hp"}); //7
+	skills.push({"name":"速度", "owned":false, "desc":"杀鸡CD减少2秒"}); //0
+	skills.push({"name":"烹饪", "owned":false, "desc":"使用炉子CD减少2秒"}); //1
+	skills.push({"name":"机械", "owned":false, "desc":"你可以制造一个自动杀鸡的机器人"}); //2
+	skills.push({"name":"探测", "owned":false, "level":0, "desc":"在鸡鸡星上，你可以一次探索 {km} km"}); //3
+	skills.push({"name":"兵工厂", "owned":false, "desc":"可以制造装备了！"}); //4
+	skills.push({"name":"统计学", "owned":false, "desc":"现在可以搞点统计相关的活儿"}); //5
+	skills.push({"name":"传送！", "owned":false, "desc":"你现在可以使用传送装置"}); //6
+	skills.push({"name":"遥感装置", "owned":false, "desc":"铁之鸡块可以恢复更多的HP"}); //7
 	
 	chickenspop=10000; //10000
 	ironchickenspop=10000; //10000
@@ -261,7 +261,7 @@ function update() {
 		$(".misc-heading").show();
 	}
 	
-	$(".skill-exploration").val("Exploration "+parseInt(skills[3].level+1)+" ("+Math.round(Math.pow(10*(skills[3].level+1),0.8))+" gold chicken nuggets)");
+	$(".skill-exploration").val("勘探 "+parseInt(skills[3].level+1)+" ("+Math.round(Math.pow(10*(skills[3].level+1),0.8))+" 金之鸡块)");
 	
 	if(items[15].owned==1) {
 		$(".trade-furnace").hide();
@@ -286,7 +286,7 @@ function update() {
 
 	if(items[2].owned>0) {
 		if(!trademap) {
-			$(".notifications").html("Trader has something new to trade with you.");
+			$(".notifications").html("商人那有些新玩意.");
 			$(".trade-portal").show();
 			$(".trade-scroll").show();
 			$(".trade-furnace2").show();
@@ -420,7 +420,7 @@ function update() {
 	}
 	
 	if(noskill) {
-		$("#skills").html("<ul><li>No skill</li></ul>");
+		$("#skills").html("<ul><li>毛技能都没有</li></ul>");
 	}
 	else {
 		$("#skills").html("<ul>"+skilllist+"</ul>");
@@ -461,7 +461,7 @@ function update() {
 		}
 	}
 	
-	$(".craft-robot").val("Make a Robot ("+Math.round(Math.pow(10*(items[18].owned+1),1.5))+" iron chicken nuggets)");
+	$(".craft-robot").val("制造一个机器人 ("+Math.round(Math.pow(10*(items[18].owned+1),1.5))+" 铁鸡块)");
 	
 	/* ARMOR STUFFS */
 	
@@ -671,7 +671,7 @@ function update() {
 		$("#mini-invt").html(qwe+'<tr><td class="invt-item-name">'+totitlecase(items[battleinvt[q].itemid].name)+'</td><td class="invt-item-owned">'+battleinvt[q].owned+'</td></tr>');
 	}
 	
-	$(".trade-tpdevice input").val("Trade a teleportation device for 2 diamond chicken meats ("+tpdevicestock+" left)");
+	$(".trade-tpdevice input").val("2个钻石鸡肉换个传送装置(剩余"+tpdevicestock+")");
 	
 	if(rubysearchstep>0)document.title="Chickens!: The Quest of the Ruby Chicken Meat";
 	
@@ -796,10 +796,10 @@ function slaychicken() {
 		items[0].owned+=get;
 		chickenspop-=1;
 		if(!beginning) {
-			$(".notifications").html("You killed a chicken with your fists and you got a piece of chicken meat. (You have "+items[0].owned+")");
+			$(".notifications").html("你用你的大爪子当武器，杀死了一些鸡，现在您有 【"+items[0].owned+"】 块鸡肉");
 		}
 		else {
-			$(".notifications").html("You killed a chicken with your fists and you got a piece of chicken meat.");
+			$(".notifications").html("你用你的大爪子当武器，杀死了一些鸡，整到了些鸡肉");
 		}
 	}
 	else if(tool==1) {
@@ -818,8 +818,9 @@ function slaychicken() {
 		else {
 			ironget=0;
 		}
+
 		total=normalget+ironget;
-		$(".notifications").html("You killed "+total+" chicken(s) with a chicken sword and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat.");
+		$(".notifications").html("【鸡剑】上占满了鸡的血，你杀死了 "+total+" 只鸡 ，获得了"+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 	}
@@ -846,8 +847,9 @@ function slaychicken() {
 		else {
 			goldget=0;
 		}
+
 		total=normalget+ironget+goldget;
-		$(".notifications").html("You killed "+total+" chicken(s) with an iron chicken sword and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("【铁鸡剑】呼啸着离开你的双手，杀死了 "+total+" 只鸡，获得了"+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -875,8 +877,9 @@ function slaychicken() {
 		else {
 			goldget=0;
 		}
+
 		total=normalget+ironget+goldget;
-		$(".notifications").html("You killed "+total+" chicken(s) with a gold chicken sword and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("【金鸡剑】发出嗜血的轰鸣，杀死了 "+total+" 只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -905,7 +908,7 @@ function slaychicken() {
 			goldget=0;
 		}
 		total=normalget+ironget+goldget;
-		$(".notifications").html("You killed "+total+" chicken(s) with a diamond chicken sword and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("【钻鸡剑】割开了时间和空间连接，杀死了 "+total+" 只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -934,7 +937,7 @@ function slaychicken() {
 			goldget=0;
 		}
 		total=normalget+ironget+goldget;
-		$(".notifications").html("You killed "+total+" chicken(s) with an emerald chicken sword and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("【翡翠鸡剑】似乎动也没有动，万事万物都如上一秒一样在运行，又似乎有些许感觉上的不一样。你杀死了 "+total+"  只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和   "+goldget+" 钻石之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -947,7 +950,7 @@ function slaychicken() {
 		
 		if(chickenspop-normalget>=0) {chickenspop-=normalget;}else {normalget=0;}if(ironchickenspop-ironget>=0) {ironchickenspop-=ironget;}else {ironget=0;}if(goldchickenspop-goldget>=0) {goldchickenspop-=goldget;}else {goldget=0;}total=normalget+ironget+goldget;
 		
-		$(".notifications").html("You killed "+total+" chicken(s) with a Chickenator 1000 and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("你用【裂鸡人1000】杀死了 "+total+" 只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -960,7 +963,7 @@ function slaychicken() {
 		
 		if(chickenspop-normalget>=0) {chickenspop-=normalget;}else {normalget=0;}if(ironchickenspop-ironget>=0) {ironchickenspop-=ironget;}else {ironget=0;}if(goldchickenspop-goldget>=0) {goldchickenspop-=goldget;}else {goldget=0;}total=normalget+ironget+goldget;
 		
-		$(".notifications").html("You killed "+total+" chicken(s) with a Chickenator 2000 and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("你用【裂鸡人2000】杀死了 "+total+" 只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -973,7 +976,7 @@ function slaychicken() {
 		
 		if(chickenspop-normalget>=0) {chickenspop-=normalget;}else {normalget=0;}if(ironchickenspop-ironget>=0) {ironchickenspop-=ironget;}else {ironget=0;}if(goldchickenspop-goldget>=0) {goldchickenspop-=goldget;}else {goldget=0;}total=normalget+ironget+goldget;
 		
-		$(".notifications").html("You killed "+total+" chicken(s) with a Chickenator 4000 and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("你用【裂鸡人4000】杀死了"+total+" 只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -986,7 +989,7 @@ function slaychicken() {
 		
 		if(chickenspop-normalget>=0) {chickenspop-=normalget;}else {normalget=0;}if(ironchickenspop-ironget>=0) {ironchickenspop-=ironget;}else {ironget=0;}if(goldchickenspop-goldget>=0) {goldchickenspop-=goldget;}else {goldget=0;}total=normalget+ironget+goldget;
 		
-		$(".notifications").html("You killed "+total+" chicken(s) with a Chickenator 8000 and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("你用【裂鸡人8000】杀死了"+total+" 只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -999,7 +1002,7 @@ function slaychicken() {
 		
 		if(chickenspop-normalget>=0) {chickenspop-=normalget;}else {normalget=0;}if(ironchickenspop-ironget>=0) {ironchickenspop-=ironget;}else {ironget=0;}if(goldchickenspop-goldget>=0) {goldchickenspop-=goldget;}else {goldget=0;}total=normalget+ironget+goldget;
 		
-		$(".notifications").html("You killed "+total+" chicken(s) with a Chickenator 9000 and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("你用【裂鸡人9000】杀死了"+total+" 只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -1012,7 +1015,7 @@ function slaychicken() {
 		
 		if(chickenspop-normalget>=0) {chickenspop-=normalget;}else {normalget=0;}if(ironchickenspop-ironget>=0) {ironchickenspop-=ironget;}else {ironget=0;}if(goldchickenspop-goldget>=0) {goldchickenspop-=goldget;}else {goldget=0;}total=normalget+ironget+goldget;
 		
-		$(".notifications").html("You killed "+total+" chicken(s) with a Chickenator 9999 and you got "+normalget+" piece(s) of chicken meat and "+ironget+" piece(s) of iron chicken meat and "+goldget+" piece(s) of gold chicken meat.");
+		$(".notifications").html("你用【裂鸡人9999】杀死了"+total+" 只鸡，获得了 "+normalget+" 鸡肉 和 "+ironget+" 铁之鸡肉 和 "+goldget+" 金之鸡肉.");
 		items[0].owned+=normalget;
 		items[1].owned+=ironget;
 		items[2].owned+=goldget;
@@ -1020,13 +1023,13 @@ function slaychicken() {
 	
 	if(items[0].owned==5) {
 		if(!invtnotif) {
-			$(".notifications").html("Inventory area and tab showed up");
+			$(".notifications").html("展示物品栏");
 			invtnotif=true;
 		}
 	}
 	if(items[0].owned==8) {
 		if(!tradernotif) {
-			$(".notifications").html("Trader wants to trade with you");
+			$(".notifications").html("商人想跟你交易咧");
 			tradernotif=true;
 		}
 	}
@@ -1034,7 +1037,7 @@ function slaychicken() {
 	if(skills[0].owned) {
 		countdown-=2;
 	}
-	cd(countdown,"slay-chicken","Slay chicken");
+	cd(countdown,"slay-chicken","杀鸡");
 	
 	update();
 	
@@ -1045,56 +1048,56 @@ function trade(what) {
 		if(items[0].owned>=5) {
 			items[0].owned-=5;
 			items[15].owned=1;
-			$(".notifications").html("Furnace to cook stuff");
+			$(".notifications").html("炉子用来烤东西");
 		}
 	}
 	else if(what=="workbench") {
 		if(items[0].owned>=5) {
 			items[0].owned-=5;
 			items[16].owned=1;
-			$(".notifications").html("Workbench to craft some items");
+			$(".notifications").html("工作台用来做装备！");
 		}
 	}
 	else if(what=="portal") {
 		if(items[0].owned>=500) {
 			items[0].owned-=500;
 			items[20].owned=1;
-			$(".notifications").html("<i>\"The door to the adventure has been opened.\"</i>");
+			$(".notifications").html("<i>\"冒险者之门已经被打开了！\"</i>");
 		}
 	}
 	else if(what=="scroll") {
 		if(items[2].owned>=20) {
 			items[2].owned-=20;
 			items[17].owned=1;
-			$(".notifications").html("The ancient scroll unlocks mechanic skills");
+			$(".notifications").html("远古卷轴解锁了机械学技能");
 		}
 	}
 	else if(what=="furnace2") {
 		if(items[0].owned>=200) {
 			items[0].owned-=200;
 			items[19].owned=1;
-			$(".notifications").html("This better furnace allows you to smelt more things at once");
+			$(".notifications").html("升级版的炉子可以让你一次融化更多的材料");
 		}
 	}
 	else if(what=="furnace3") {
 		if(items[0].owned>=1000) {
 			items[0].owned-=1000;
 			items[21].owned=1;
-			$(".notifications").html("This much better furnace allows you to smelt 100 items at once");
+			$(".notifications").html("真·升级版炉子可以让你一次融化100个材料");
 		}
 	}
 	else if(what=="furnace4") {
 		if(items[3].owned>=10) {
 			items[3].owned-=10;
 			items[27].owned=1;
-			$(".notifications").html("This super furnace allows you to smelt 1000 items at once");
+			$(".notifications").html("超真·升级版炉子可以让你一次融化1000个材料");
 		}
 	}
 	else if(what=="scroll2") {
 		if(items[0].owned>=300) {
 			items[0].owned-=300;
 			items[22].owned=1;
-			$(".notifications").html("This ancient scroll unlocks armory skills");
+			$(".notifications").html("古老的卷轴解锁了兵工厂技能");
 		}
 	}
 	else if(what=="wheat") {
@@ -1109,7 +1112,7 @@ function trade(what) {
 		if(items[24].owned>=30) {
 			items[24].owned-=30;
 			items[25].owned=1;
-			$(".notifications").html("Medicines!");
+			$(".notifications").html("药!");
 		}
 	}
 	else if(what=="tpdevice") {
@@ -1117,14 +1120,14 @@ function trade(what) {
 			items[3].owned-=2;
 			items[26].owned+=1;
 			tpdevicestock--;
-			$(".notifications").html("Yay! This awesome stuff is really awesome! :D");
+			$(".notifications").html("干! 这玩意真是屌爆了! :D");
 		}
 	}
 	else if(what=="compass") {
 		if(items[14].owned>=100) {
 			items[14].owned-=100;
 			items[28].owned+=1;
-			$(".notifications").html("You unlocked a new command in chickenverse 2.0!");
+			$(".notifications").html("你解锁了鸡鸡星球2.0!");
 		}
 	}
 	update();
@@ -1168,8 +1171,8 @@ function furnace(what,qty) {
 		if(items[0].owned>=qty) {
 			items[0].owned-=qty;
 			items[10].owned+=qty;
-			$(".notifications").html("Chicken nugget is delicious, yummy!");
-			cdc(secs,"furnace-chicken-nugget","1 Chicken Meat -> 1 Chicken Nugget");
+			$(".notifications").html("我爱鸡块, 哦也!");
+			cdc(secs,"furnace-chicken-nugget","1 鸡肉 -> 1 鸡块");
 			cdc(secs,"furnace-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-chicken-nugget-thousand","x1000");
@@ -1179,8 +1182,8 @@ function furnace(what,qty) {
 		if(items[0].owned>=qty) {
 			items[0].owned-=qty;
 			items[5].owned+=qty;
-			$(".notifications").html("This chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-chicken-meat","1 Chicken Meat -> 1 Hardened Chicken Meat");
+			$(".notifications").html("把鸡肉硬化了, 嗯哼～");
+			cdc(secs,"furnace-hardened-chicken-meat","1 鸡肉 -> 1 硬化鸡肉");
 			cdc(secs,"furnace-hardened-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-chicken-meat-thousand","x1000");
@@ -1190,8 +1193,8 @@ function furnace(what,qty) {
 		if(items[1].owned>=qty) {
 			items[1].owned-=qty;
 			items[11].owned+=qty;
-			$(".notifications").html("Iron chicken nugget is very delicious, yummy!");
-			cdc(secs,"furnace-iron-chicken-nugget","1 Iron Chicken Meat -> 1 Iron Chicken Nugget");
+			$(".notifications").html("铁鸡块贼他妈美味，赞！");
+			cdc(secs,"furnace-iron-chicken-nugget","1 铁之鸡肉-> 1 铁之鸡块");
 			cdc(secs,"furnace-iron-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-iron-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-iron-chicken-nugget-thousand","x1000");
@@ -1201,8 +1204,8 @@ function furnace(what,qty) {
 		if(items[1].owned>=qty) {
 			items[1].owned-=qty;
 			items[6].owned+=qty;
-			$(".notifications").html("This iron chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-iron-chicken-meat","1 Iron Chicken Meat -> 1 Hardened Iron Chicken Meat");
+			$(".notifications").html("把铁之鸡肉硬化了, 嗯哼～!");
+			cdc(secs,"furnace-hardened-iron-chicken-meat","1 铁之鸡肉-> 1 硬化铁之鸡肉");
 			cdc(secs,"furnace-hardened-iron-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-iron-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-iron-chicken-meat-thousand","x1000");
@@ -1212,8 +1215,8 @@ function furnace(what,qty) {
 		if(items[2].owned>=qty) {
 			items[2].owned-=qty;
 			items[12].owned+=qty;
-			$(".notifications").html("Gold chicken nugget is more delicious than iron chicken nugget, yummy!");
-			cdc(secs,"furnace-gold-chicken-nugget","1 Gold Chicken Meat -> 1 Gold Chicken Nugget");
+			$(".notifications").html("金之鸡块比铁鸡块还要屌!");
+			cdc(secs,"furnace-gold-chicken-nugget","1 金之鸡肉-> 1 金之鸡块");
 			cdc(secs,"furnace-gold-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-gold-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-gold-chicken-nugget-thousand","x1000");
@@ -1223,8 +1226,8 @@ function furnace(what,qty) {
 		if(items[2].owned>=qty) {
 			items[2].owned-=qty;
 			items[7].owned+=qty;
-			$(".notifications").html("This gold chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-gold-chicken-meat","1 Gold Chicken Meat -> 1 Hardened Gold Chicken Meat");
+			$(".notifications").html("把金之鸡肉硬化了, 嗯哼～!");
+			cdc(secs,"furnace-hardened-gold-chicken-meat","1 金之鸡肉-> 1 硬化金之鸡肉");
 			cdc(secs,"furnace-hardened-gold-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-gold-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-gold-chicken-meat-thousand","x1000");
@@ -1234,8 +1237,8 @@ function furnace(what,qty) {
 		if(items[3].owned>=qty) {
 			items[3].owned-=qty;
 			items[13].owned+=qty;
-			$(".notifications").html("Diamond chicken nugget is very very delicious asdfhvryuiery");
-			cdc(secs,"furnace-diamond-chicken-nugget","1 Diamond Chicken Meat -> 1 Diamond Chicken Nugget");
+			$(".notifications").html("钻石机肉屌屌屌爆了，asdfhvryuiery");
+			cdc(secs,"furnace-diamond-chicken-nugget","1 钻石之鸡肉-> 1 钻石之鸡块");
 			cdc(secs,"furnace-diamond-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-diamond-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-diamond-chicken-nugget-thousand","x1000");
@@ -1245,8 +1248,8 @@ function furnace(what,qty) {
 		if(items[3].owned>=qty) {
 			items[3].owned-=qty;
 			items[8].owned+=qty;
-			$(".notifications").html("This diamond chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-diamond-chicken-meat","1 Diamond Chicken Meat -> 1 Hardened Diamond Chicken Meat");
+			$(".notifications").html("把钻石之鸡肉硬化了, 嗯哼～!");
+			cdc(secs,"furnace-hardened-diamond-chicken-meat","1 钻石之鸡肉-> 1 硬化钻石之鸡肉");
 			cdc(secs,"furnace-hardened-diamond-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-diamond-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-diamond-chicken-meat-thousand","x1000");
@@ -1256,8 +1259,8 @@ function furnace(what,qty) {
 		if(items[4].owned>=qty) {
 			items[4].owned-=qty;
 			items[14].owned+=qty;
-			$(".notifications").html("Emerald chicken nugget is super delicious, although I believe emerald chicken nugget is more delicious, though");
-			cdc(secs,"furnace-emerald-chicken-nugget","1 Emerald Chicken Meat -> 1 Emerald Chicken Nugget");
+			$(".notifications").html("翡翠鸡肉比你想象的更美味");
+			cdc(secs,"furnace-emerald-chicken-nugget","1 翡翠之鸡肉-> 1 翡翠之鸡块");
 			cdc(secs,"furnace-emerald-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-emerald-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-emerald-chicken-nugget-thousand","x1000");
@@ -1267,8 +1270,8 @@ function furnace(what,qty) {
 		if(items[4].owned>=qty) {
 			items[4].owned-=qty;
 			items[9].owned+=qty;
-			$(".notifications").html("This emerald chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-emerald-chicken-meat","1 Emerald Chicken Meat -> 1 Hardened Emerald Chicken Meat");
+			$(".notifications").html("把翡翠之鸡肉硬化了, 嗯哼～!");
+			cdc(secs,"furnace-hardened-emerald-chicken-meat","1 翡翠之鸡肉-> 1 硬化翡翠之鸡肉");
 			cdc(secs,"furnace-hardened-emerald-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-emerald-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-emerald-chicken-meat-thousand","x1000");
@@ -1281,28 +1284,28 @@ function craft(what) {
 		if(items[5].owned>=10) {
 			tool=1;
 			items[5].owned-=10;
-			$(".notifications").html("Chicken sword to kill more chickens faster");
+			$(".notifications").html("【鸡剑】让你杀的更快");
 		}
 	}
 	else if(what=="iron chicken sword") {
 		if(items[6].owned>=10) {
 			tool=2;
 			items[6].owned-=10;
-			$(".notifications").html("Iron chicken sword to kill more chickens than chicken sword");
+			$(".notifications").html("【铁鸡剑】让你杀的比更快还要快");
 		}
 	}
 	else if(what=="gold chicken sword") {
 		if(items[7].owned>=10) {
 			tool=3;
 			items[7].owned-=10;
-			$(".notifications").html("Gold chicken sword for the win!!!");
+			$(".notifications").html("【金鸡剑】!!!");
 		}
 	}
 	else if(what=="diamond chicken sword") {
 		if(items[8].owned>=10) {
 			tool=4;
 			items[8].owned-=10;
-			$(".notifications").html("DIAMOND CHICKEN SWORD!!!");
+			$(".notifications").html("【钻鸡剑】!!!");
 		}
 	}
 	else if(what=="emerald chicken sword") {
@@ -1316,79 +1319,79 @@ function craft(what) {
 		if(items[11].owned>=Math.round(Math.pow(10*(items[18].owned+1),1.5))) {
 			items[11].owned-=Math.round(Math.pow(10*(items[18].owned+1),1.5));
 			items[18].owned++;
-			$(".notifications").html("One more robot to slay more chickens");
+			$(".notifications").html("来个机器人，让我们宰更多的鸡！");
 		}
 	}
 	else if(what=="robot-destroy") {
 		if(items[18].owned>=1) {
 			items[18].owned--;
-			$(".notifications").html("You have destroyed a robot, too bad you don't get anything");
+			$(".notifications").html("你干翻了一个机器人, 毛也没拿到");
 		}
 	}
 	
 	else if(what=="chicken helmet") {
-		if(items[5].owned>=50) { helmet=1; items[5].owned-=50; $(".notifications").html("You are now equipped with chicken helmet"); }
+		if(items[5].owned>=50) { helmet=1; items[5].owned-=50; $(".notifications").html("你现在装备上了【鸡头】"); }
 	}
 	else if(what=="chicken chestplate") {
-		if(items[5].owned>=100) { chestplate=1; items[5].owned-=100; $(".notifications").html("You are now equipped with chicken chestplate"); }
+		if(items[5].owned>=100) { chestplate=1; items[5].owned-=100; $(".notifications").html("你现在装备上了【鸡胸】"); }
 	}
 	else if(what=="chicken leggings") {
-		if(items[5].owned>=75) { leggings=1; items[5].owned-=75; $(".notifications").html("You are now equipped with chicken leggings"); }
+		if(items[5].owned>=75) { leggings=1; items[5].owned-=75; $(".notifications").html("你现在装备上了【鸡腿】"); }
 	}
 	else if(what=="chicken boots") {
-		if(items[5].owned>=25) { boots=1; items[5].owned-=25; $(".notifications").html("You are now equipped with chicken boots"); }
+		if(items[5].owned>=25) { boots=1; items[5].owned-=25; $(".notifications").html("你现在装备上了【鸡脚】"); }
 	}
 	
 	else if(what=="iron chicken helmet") {
-		if(items[6].owned>=50) { helmet=2; items[6].owned-=50; $(".notifications").html("You are now equipped with iron chicken helmet"); }
+		if(items[6].owned>=50) { helmet=2; items[6].owned-=50; $(".notifications").html("你现在装备上了【铁鸡头】"); }
 	}
 	else if(what=="iron chicken chestplate") {
-		if(items[6].owned>=100) { chestplate=2; items[6].owned-=100; $(".notifications").html("You are now equipped with iron chicken chestplate"); }
+		if(items[6].owned>=100) { chestplate=2; items[6].owned-=100; $(".notifications").html("你现在装备上了【铁鸡胸】"); }
 	}
 	else if(what=="iron chicken leggings") {
-		if(items[6].owned>=75) { leggings=2; items[6].owned-=75; $(".notifications").html("You are now equipped with iron chicken leggings"); }
+		if(items[6].owned>=75) { leggings=2; items[6].owned-=75; $(".notifications").html("你现在装备上了【铁鸡腿】"); }
 	}
 	else if(what=="iron chicken boots") {
-		if(items[6].owned>=25) { boots=2; items[6].owned-=25; $(".notifications").html("You are now equipped with iron chicken boots"); }
+		if(items[6].owned>=25) { boots=2; items[6].owned-=25; $(".notifications").html("你现在装备上了【铁鸡脚】"); }
 	}
 	
 	else if(what=="gold chicken helmet") {
-		if(items[7].owned>=50) { helmet=3; items[7].owned-=50; $(".notifications").html("You are now equipped with gold chicken helmet"); }
+		if(items[7].owned>=50) { helmet=3; items[7].owned-=50; $(".notifications").html("你现在装备上了【金鸡头】"); }
 	}
 	else if(what=="gold chicken chestplate") {
-		if(items[7].owned>=100) { chestplate=3; items[7].owned-=100; $(".notifications").html("You are now equipped with gold chicken chestplate"); }
+		if(items[7].owned>=100) { chestplate=3; items[7].owned-=100; $(".notifications").html("你现在装备上了【金鸡胸】"); }
 	}
 	else if(what=="gold chicken leggings") {
-		if(items[7].owned>=75) { leggings=3; items[7].owned-=75; $(".notifications").html("You are now equipped with gold chicken leggings"); }
+		if(items[7].owned>=75) { leggings=3; items[7].owned-=75; $(".notifications").html("你现在装备上了【金鸡腿】"); }
 	}
 	else if(what=="gold chicken boots") {
-		if(items[7].owned>=25) { boots=3; items[7].owned-=25; $(".notifications").html("You are now equipped with gold chicken boots"); }
+		if(items[7].owned>=25) { boots=3; items[7].owned-=25; $(".notifications").html("你现在装备上了【金鸡脚】"); }
 	}
 	
 	else if(what=="diamond chicken helmet") {
-		if(items[8].owned>=50) { helmet=4; items[8].owned-=50; $(".notifications").html("You are now equipped with diamond chicken helmet"); }
+		if(items[8].owned>=50) { helmet=4; items[8].owned-=50; $(".notifications").html("你现在装备上了【钻石鸡头】"); }
 	}
 	else if(what=="diamond chicken chestplate") {
-		if(items[8].owned>=100) { chestplate=4; items[8].owned-=100; $(".notifications").html("You are now equipped with diamond chicken chestplate"); }
+		if(items[8].owned>=100) { chestplate=4; items[8].owned-=100; $(".notifications").html("你现在装备上了【钻石鸡胸】"); }
 	}
 	else if(what=="diamond chicken leggings") {
-		if(items[8].owned>=75) { leggings=4; items[8].owned-=75; $(".notifications").html("You are now equipped with diamond chicken leggings"); }
+		if(items[8].owned>=75) { leggings=4; items[8].owned-=75; $(".notifications").html("你现在装备上了【钻石鸡腿】"); }
 	}
 	else if(what=="diamond chicken boots") {
-		if(items[8].owned>=25) { boots=4; items[8].owned-=25; $(".notifications").html("You are now equipped with diamond chicken boots"); }
+		if(items[8].owned>=25) { boots=4; items[8].owned-=25; $(".notifications").html("你现在装备上了【钻石鸡脚】"); }
 	}
 	
 	else if(what=="emerald chicken helmet") {
-		if(items[9].owned>=50) { helmet=5; items[9].owned-=50; $(".notifications").html("You are now equipped with emerald chicken helmet"); }
+		if(items[9].owned>=50) { helmet=5; items[9].owned-=50; $(".notifications").html("你现在装备上了【翡翠鸡头】"); }
 	}
 	else if(what=="emerald chicken chestplate") {
-		if(items[9].owned>=100) { chestplate=5; items[9].owned-=100; $(".notifications").html("You are now equipped with emerald chicken chestplate"); }
+		if(items[9].owned>=100) { chestplate=5; items[9].owned-=100; $(".notifications").html("你现在装备上了【翡翠鸡胸】"); }
 	}
 	else if(what=="emerald chicken leggings") {
-		if(items[9].owned>=75) { leggings=5; items[9].owned-=75; $(".notifications").html("You are now equipped with emerald chicken leggings"); }
+		if(items[9].owned>=75) { leggings=5; items[9].owned-=75; $(".notifications").html("你现在装备上了【翡翠鸡腿】"); }
 	}
 	else if(what=="emerald chicken boots") {
-		if(items[9].owned>=25) { boots=5; items[9].owned-=25; $(".notifications").html("You are now equipped with emerald chicken boots"); }
+		if(items[9].owned>=25) { boots=5; items[9].owned-=25; $(".notifications").html("你现在装备上了【翡翠鸡脚】"); }
 	}
 	
 	if(what.split(" ")[0]=="chickenator") {
@@ -1488,11 +1491,11 @@ function rolldice() {
 			items[what].owned-=qty;
 			diceroll=getRandomInt(1,6);
 			if(diceroll == 1 || diceroll == 6) {
-				$("#dicegame-result").html("The dice lands on number "+diceroll+" and you get "+(qty*3)+" "+items[what].name+"s!");
+				$("#dicegame-result").html("骰子丢出来一个"+diceroll+" ，你获得了"+(qty*3)+" "+items[what].name+"!");
 				items[what].owned+=qty*3;
 			}
 			else {
-				$("#dicegame-result").html("The dice lands on number  "+diceroll+" and you get nothing :(");
+				$("#dicegame-result").html("骰子丢出来一个 "+diceroll+" ，你毛也没获得:(");
 			}
 		}
 	}
@@ -1508,18 +1511,18 @@ function chickenatorprice() {
 	if(tool==10){weaponversion=9999; times=1;}
 	
 	if(tool==5) {
-		beginword='To craft a Chickenator '+weaponversion;
+		beginword='造个【裂鸡人'+weaponversion + '】';
 	}
 	else {
-		beginword='To upgrade your current Chickenator to Chickenator '+weaponversion;
+		beginword='升级你的裂鸡人至 '+weaponversion;
 	}
 	
-	alert(beginword+', you will need:\n\n'+times+' Hardened Emerald Chicken Meat\n'+times*10+' Hardened Diamond Chicken Meats\n'+times*100+' Hardened Gold Chicken Meats\n'+times*1000+' Hardened Iron Chicken Meats\n'+times*10000+' Hardened Chicken Meats');
+	alert(beginword+', 你需要:\n\n'+times+' 硬化翡翠鸡肉 \n'+times*10+' 硬化钻石鸡肉\n'+times*100+' 硬化金鸡肉\n'+times*1000+' 硬化铁鸡肉\n'+times*10000+' 硬化鸡肉');
 }
 
 function cipherclue() {
 	if(items[14].owned<1) {
-		alert('Oops, you doesn\'t seem have an emerald chicken nugget');
+		alert('噢日, 你好像没有翡翠鸡块啊');
 	}
 	else {
 		items[14].owned--;
@@ -1542,9 +1545,9 @@ setInterval(function() {
 		playerhp-=totaldmg;
 		if(playerhp<=0 && !endgame) {
 			playerhp=1;
-			cd(Math.round(kmexplored/10),"enter-portal","enter the portal!");
+			cd(Math.round(kmexplored/10),"enter-portal","进入传送门!");
 			exitportal("die");
-			$(".notifications").html("You almost died in battle, phew!");
+			$(".notifications").html("大佬，你挂了!");
 		}
 		
 		
@@ -1557,19 +1560,19 @@ function numbertotext(nbr) {
 		return "None";
 	}
 	else if(nbr==1) {
-		return "Chicken";
+		return "鸡";
 	}
 	else if(nbr==2) {
-		return "Iron Chicken";
+		return "铁鸡";
 	}
 	else if(nbr==3) {
-		return "Gold Chicken";
+		return "金鸡";
 	}
 	else if(nbr==4) {
-		return "Diamond Chicken";
+		return "钻鸡";
 	}
 	else if(nbr==5) {
-		return "Emerald Chicken";
+		return "翠鸡";
 	}
 	else {
 		return nbr;
@@ -1588,51 +1591,51 @@ function update_battle() {
 	
 	if(tool==0) {
 		playerdmg=1;
-		playerweapon="Fists :o";
+		playerweapon="大爪子 :o";
 	}
 	else if(tool==1) {
 		playerdmg=2;
-		playerweapon="Chicken Sword";
+		playerweapon="鸡剑";
 	}
 	else if(tool==2) {
 		playerdmg=3;
-		playerweapon="Iron Chicken Sword";
+		playerweapon="铁鸡剑";
 	}
 	else if(tool==3) {
 		playerdmg=4;
-		playerweapon="Gold Chicken Sword";
+		playerweapon="金鸡剑";
 	}
 	else if(tool==4) {
 		playerdmg=5;
-		playerweapon="Diamond Chicken Sword";
+		playerweapon="钻石鸡剑";
 	}
 	else if(tool==5) {
 		playerdmg=6;
-		playerweapon="Emerald Chicken Sword";
+		playerweapon="翡翠鸡剑";
 	}
 	else if(tool==6) {
 		playerdmg=7;
-		playerweapon="Chickenator 1000";
+		playerweapon="裂鸡人 1000";
 	}
 	else if(tool==7) {
 		playerdmg=8;
-		playerweapon="Chickenator 2000";
+		playerweapon="裂鸡人 2000";
 	}
 	else if(tool==8) {
 		playerdmg=10;
-		playerweapon="Chickenator 4000";
+		playerweapon="裂鸡人 4000";
 	}
 	else if(tool==9) {
 		playerdmg=14;
-		playerweapon="Chickenator 8000";
+		playerweapon="裂鸡人 8000";
 	}
 	else if(tool==10) {
 		playerdmg=15;
-		playerweapon="Chickenator 9000";
+		playerweapon="裂鸡人 9000";
 	}
 	else if(tool==11) {
 		playerdmg=16;
-		playerweapon="Chickenator 9999";
+		playerweapon="裂鸡人 9999";
 	}
 	
 	if(battleinvt[2].owned>0 && kmexplored!=0) {
@@ -1711,7 +1714,7 @@ function update_battle() {
 						}
 			
 						asddsa=thisdrop.drop;
-						$("#"+divname).html(bl+'<div class="enemy-card ec-drop">The <b>'+thisdrop.from+'</b> drops a piece of '+items[asddsa].name+takebutton+'</div>');
+						$("#"+divname).html(bl+'<div class="enemy-card ec-drop"><b>'+thisdrop.from+'</b> 掉落了一些 '+items[asddsa].name+takebutton+'</div>');
 					}
 					else {
 						$("#"+divname).html(bl+'<div class="enemy-card" style="opacity:0;"></div>');
@@ -1732,36 +1735,36 @@ scroll='\n\
    _______________________________________________________\n\
  =(__    ___      __    _____   ___    __      ____  _    _)=\n\
    |                                                      |\n\
-   |  Hello, wanderer! If you wonder who am I, I\'m just   |\n\
-   |  a wanderer, like you too!                           |\n\
+   |  你好，游荡者.嗯，你问我是谁？我也是个游荡者啦，     |\n\
+   |  跟你一样					                          |\n\
    |                                                      |\n\
-   |  I think I know what you are thinking right now,     |\n\
-   |  you wonder why there is a cliff right? And where    |\n\
-   |  in the world are those chickens especially the      |\n\
-   |  ruby ones (as we all know, everyone wants to eat    |\n\
-   |  ruby chicken nugget!)                               |\n\
+   |  我想我知道现在你在想啥，为毛这里会有个悬崖？？      |\n\
+   |  你一定还想知道，他妈的这些鸡，到底在哪里？？        |\n\
+   |  （特别是这些红宝石鸡！）                            |\n\
+   |  每个人都想来点红宝石鸡块！                          |\n\
    |                                                      |\n\
-   |  It is said that the ruby meat doesn\'t come from a   |\n\
-   |  ruby chicken, but a legendary mutant chicken that   |\n\
-   |  lives somewhere in the chickenverse, and currently  |\n\
-   |  I\'m searching for it to kill it, I hope you will    |\n\
-   |  search for it too!                                  |\n\
    |                                                      |\n\
-   |  In this chest, I have included how you can make a   |\n\
-   |  strong weapon that I named "Chickenator", this      |\n\
-   |  weapon is strong and has many versions, the one     |\n\
-   |  I give you is Chickenator 1000 and you can make     |\n\
-   |  better versions like Chickenator 2000 till the      |\n\
-   |  Chickenator 9999!                                   |\n\
+   |  然而无论如何，你要得到红宝石鸡肉                    |\n\
+   |  仅仅靠杀红宝石鸡是没用的。                          |\n\
+   |  你得去宰点传说中才有的变异鸡，                      |\n\
+   |  传说中生活中鸡鸡星里的怪之鸡                        |\n\
+   |                                                      |\n\
+   |                                                      |\n\
+   |  这个箱子里，我给你留了些大杀器，我叫它们            |\n\
+   |  "裂鸡人", 这些玩意很牛逼，并且有很多升级版本。      |\n\
+   |  我给你的版本是【裂鸡人 1000】，                     |\n\
+   |  你可以升级他们直到【裂鸡人 9999】                   |\n\
+   |                                                      |\n\
+   |                                                      |\n\
    |__    ___   __    ___  ______    _____        ___     |\n\
  =(________________________________________________________)=\n\
 ';
-		$("#battle-log").html("You ended up in a cliff<br>You wondered why there is a cliff<br>No more chickens????<br><br>But you found a chest that contains this scroll:<br><pre>"+scroll+"</pre>");
-		$(".notifications").html("Hmm... maybe the trader knows something about the legendary mutant chicken");
+		$("#battle-log").html("在一个悬崖前你停住了脚步<br>你在思考这他妈到底哪来的悬崖<br>鸡鸡星呢？没鸡鸡了????<br><br>幸运的是你发现了这个卷轴:<br><pre>"+卷轴+"</pre>");
+		$(".notifications").html("嗯... 可能商人知道一些什么，有关传说中的变异鸡");
 	}
 	
 	if(kmexplored==0 && tpdevicekm!=0) {
-		$("#battle-log").html('<input type="button" value="Teleport to the teleport device! ('+tpdevicekm+' km)" id="button-tp" onclick="tptotpdevice()">');
+		$("#battle-log").html('<input type="button" value="使用传送装置! ('+tpdevicekm+' km)" id="button-tp" onclick="tptotpdevice()">');
 	}
 	
 	if(totalenemies==0) {
@@ -1860,10 +1863,10 @@ function enterportal() {
 						$("#chickenverse2").show();
 						$("#textbased-input").focus();
 						if(!getscroll) {
-							$("#notificationlog").html("<p>You don't know where you currently are<br>In front of you you see a mysterious hole, but you think you shouldn't go there</p>");
+							$("#notificationlog").html("<p>老实说，你不知道你到底在哪<br>在你面前的是个神秘的洞, 但是直觉告诉你，这玩意不！能！进！</p>");
 						}
 						else {
-							$("#notificationlog").html("<p>You are now here, at the Chickenverse 2.0<br>In front of you there is a mysterious hole</p>");
+							$("#notificationlog").html("<p>终于你来到了这里, 鸡鸡星2.0欢迎你<br>在你面前的是个神秘的洞</p>");
 							
 							rooms=[];
 							newrooms=[];
@@ -1933,7 +1936,7 @@ function enterportal() {
 						}
 					}
 					else {
-						$(".notifications").html("Never hesitate to explore, just explore as far as you can! Something is waiting you at the end...");
+						$(".notifications").html("官人, 探索千万尽力而为哦。因为有个那啥啥在最后等着你～～");
 						$("#adventure").show();
 					}
 					
@@ -1976,7 +1979,7 @@ function explorefurther() {
 	if(kmexplored>=50) {
 		if(!tradebetterfurnace) {
 			tradebetterfurnace=true;
-			$(".notifications").html("Trader has something more to trade with you or maybe you want to play a game??");
+			$(".notifications").html("商人有些新东西想卖给你");
 			update();
 		}
 	}
@@ -1984,7 +1987,7 @@ function explorefurther() {
 	if(kmexplored>=300) {
 		if(!introducetp) {
 			introducetp=true;
-			$(".notifications").html("Now you can learn new skills!");
+			$(".notifications").html("你可以学点新技能了!");
 			update();
 		}
 	}
@@ -1993,7 +1996,7 @@ function explorefurther() {
 		if(getRandomInt(1,3)!=1) {
 			a=getRandomInt(1,3);
 			for(nbr=0;nbr<a;nbr++) {
-				makeenemy("Chicken",0,1,0);
+				makeenemy("鸡",0,1,0);
 			}
 		}
 	}
@@ -2001,7 +2004,7 @@ function explorefurther() {
 		if(Math.random()<0.5) {
 			a=getRandomInt(2,4);
 			for(nbr=0;nbr<a;nbr++) {
-				makeenemy("Chicken",0,1,0);
+				makeenemy("鸡",0,1,0);
 			}
 		}
 	}
@@ -2010,14 +2013,14 @@ function explorefurther() {
 		for(nbr=0;nbr<a;nbr++) {
 			if(Math.random()<0.5) {
 				if(Math.random()<0.5) {
-					makeenemy("Chicken",0,1,0);
+					makeenemy("鸡",0,1,0);
 				}
 				else {
-					makeenemy("Angry Chicken",0,1,1);
+					makeenemy("怒鸡",0,1,1);
 				}
 			}
 			else {
-				makeenemy("Iron Chicken",1,3,0);
+				makeenemy("铁鸡",1,3,0);
 			}
 		}
 	}
@@ -2027,22 +2030,22 @@ function explorefurther() {
 			b=getRandomInt(1,3);
 			if(b==1) {
 				if(Math.random()<0.5) {
-					makeenemy("Chicken",0,1,0);
+					makeenemy("鸡",0,1,0);
 				}
 				else {
-					makeenemy("Angry Chicken",0,1,1);
+					makeenemy("怒鸡",0,1,1);
 				}
 			}
 			else if(b==2) {
 				if(Math.random()<0.5) {
-					makeenemy("Iron Chicken",1,3,0);
+					makeenemy("铁鸡",1,3,0);
 				}
 				else {
-					makeenemy("Angry Iron Chicken",1,3,2);
+					makeenemy("怒铁鸡",1,3,2);
 				}
 			}
 			else {
-				makeenemy("Gold Chicken",2,5,0);
+				makeenemy("金鸡",2,5,0);
 			}
 		}
 	}
@@ -2052,56 +2055,56 @@ function explorefurther() {
 			b=getRandomInt(1,6);
 			if(b==1) {
 				if(Math.random()<0.5) {
-					makeenemy("Chicken",0,1,0);
+					makeenemy("鸡",0,1,0);
 				}
 				else {
-					makeenemy("Angry Chicken",0,1,1);
+					makeenemy("怒鸡",0,1,1);
 				}
 			}
 			else if(b==2 || b==3) {
 				if(Math.random()<0.5) {
-					makeenemy("Iron Chicken",1,3,0);
+					makeenemy("铁鸡",1,3,0);
 				}
 				else {
-					makeenemy("Angry Iron Chicken",1,3,2);
+					makeenemy("怒铁鸡",1,3,2);
 				}
 			}
 			else {
 				if(Math.random()<0.5) {
-					makeenemy("Gold Chicken",2,5,0);
+					makeenemy("金鸡",2,5,0);
 				}
 				else {
-					makeenemy("Angry Gold Chicken",2,5,4);
+					makeenemy("怒金鸡",2,5,4);
 				}
 			}
 		}
-		makeenemy("Glitched Chicken",999999,1,0);
+		makeenemy("【【故障鸡】】",999999,1,0);
 	}
 	else if(kmexplored>=100 && kmexplored<150) { //super
 		a=getRandomInt(5,8);
 		for(nbr=0;nbr<a;nbr++) {
 			b=getRandomInt(1,7);
 			if(b==1) {
-				makeenemy("Angry Chicken",0,1,1);
+				makeenemy("怒鸡",0,1,1);
 			}
 			else if(b==2 || b==3) {
 				if(Math.random()<0.3) {
-					makeenemy("Iron Chicken",1,3,0);
+					makeenemy("铁鸡",1,3,0);
 				}
 				else {
-					makeenemy("Angry Iron Chicken",1,3,2);
+					makeenemy("怒铁鸡",1,3,2);
 				}
 			}
 			else if(b>=4 && b<=6){
 				if(Math.random()<0.4) {
-					makeenemy("Gold Chicken",2,5,0);
+					makeenemy("金鸡",2,5,0);
 				}
 				else {
-					makeenemy("Angry Gold Chicken",2,5,4);
+					makeenemy("怒金鸡",2,5,4);
 				}
 			}
 			else {
-				makeenemy("Glitched Chicken",999999,1,0);
+				makeenemy("【【故障鸡】】",999999,1,0);
 			}
 		}
 	}
@@ -2110,21 +2113,21 @@ function explorefurther() {
 		for(nbr=0;nbr<a;nbr++) {
 			b=getRandomInt(1,7);
 			if(b==1) {
-				makeenemy("Angry Chicken",0,1,1);
+				makeenemy("怒鸡",0,1,1);
 			}
 			else if(b==2 || b==3) {
-					makeenemy("Angry Iron Chicken",1,3,2);
+					makeenemy("怒铁鸡",1,3,2);
 			}
 			else if(b>=4 && b<=6) {
 				if(Math.random()<0.3) {
-					makeenemy("Gold Chicken",2,5,0);
+					makeenemy("金鸡",2,5,0);
 				}
 				else {
-					makeenemy("Angry Gold Chicken",2,5,4);
+					makeenemy("怒金鸡",2,5,4);
 				}
 			}
 			else {
-				makeenemy("Glitched Chicken",999999,1,0);
+				makeenemy("【【故障鸡】】",999999,1,0);
 			}
 		}
 	}
@@ -2133,20 +2136,20 @@ function explorefurther() {
 		for(nbr=0;nbr<a;nbr++) {
 			b=getRandomInt(1,65);
 			if(b<10) {
-				makeenemy("Angry Iron Chicken",1,3,2);
+				makeenemy("怒铁鸡",1,3,2);
 			}
 			else if(b>=10 && b<=40) {
-				makeenemy("Diamond Chicken",3,7,3);
+				makeenemy("钻鸡",3,7,3);
 			}
 			else if(b>40 && b<=50) {
-				makeenemy("Angry Gold Chicken",2,5,4);
+				makeenemy("怒金鸡",2,5,4);
 			}
 			else {
 				if(Math.random()<0.5) {
-					makeenemy("Glitched Chicken",999999,1,0);
+					makeenemy("【【故障鸡】】",999999,1,0);
 				}
 				else {
-					makeenemy("Angry Glitched Ch.",999999,1,1);
+					makeenemy("【【超×故障鸡】】",999999,1,1);
 				}
 			}
 		}
@@ -2156,17 +2159,17 @@ function explorefurther() {
 		for(nbr=0;nbr<a;nbr++) {
 			b=getRandomInt(1,50);
 			if(b>=35) {
-				makeenemy("Diamond Chicken",3,7,3);
+				makeenemy("钻鸡",3,7,3);
 			}
 			else {
-				makeenemy("Angry Gold Chicken",2,5,4);
+				makeenemy("怒金鸡",2,5,4);
 			}
 			if(Math.random()<0.3) {
 				if(Math.random()<0.3) {
-					makeenemy("Glitched Chicken",999999,1,0);
+					makeenemy("【【故障鸡】】",999999,1,0);
 				}
 				else {
-					makeenemy("Angry Glitched Ch.",999999,1,2);
+					makeenemy("【【超×故障鸡】】",999999,1,2);
 				}
 			}
 		}
@@ -2176,18 +2179,18 @@ function explorefurther() {
 		for(nbr=0;nbr<a;nbr++) {
 			b=getRandomInt(1,90);
 			if(b<=30) {
-				makeenemy("Diamond Chicken",3,7,3);
+				makeenemy("钻鸡",3,7,3);
 			}
 			else if(b>30 && b<=50) {
 				if(Math.random()<0.3) {
-					makeenemy("Glitched Chicken",999999,1,0);
+					makeenemy("【【故障鸡】】",999999,1,0);
 				}
 				else {
-					makeenemy("Angry Glitched Ch.",999999,1,3);
+					makeenemy("【【超×故障鸡】】",999999,1,3);
 				}
 			}
 			else {
-				makeenemy("Angry Diamond Ch.",3,7,6);
+				makeenemy("怒钻鸡",3,7,6);
 			}
 		}
 	}
@@ -2196,18 +2199,18 @@ function explorefurther() {
 		for(nbr=0;nbr<a;nbr++) {
 			b=getRandomInt(1,90);
 			if(b<=5) {
-				makeenemy("Emerald Chicken",4,10,5);
+				makeenemy("翡翠鸡",4,10,5);
 			}
 			else if(b>30 && b<=50) {
 				if(Math.random()<0.3) {
-					makeenemy("Glitched Chicken",999999,1,0);
+					makeenemy("【【故障鸡】】",999999,1,0);
 				}
 				else {
-					makeenemy("Angry Glitched Ch.",999999,1,3);
+					makeenemy("【【超×故障鸡】】",999999,1,3);
 				}
 			}
 			else {
-				makeenemy("Angry Diamond Ch.",3,7,6);
+				makeenemy("怒钻鸡",3,7,6);
 			}
 		}
 	}
@@ -2216,17 +2219,17 @@ function explorefurther() {
 		for(nbr=0;nbr<a;nbr++) {
 			b=getRandomInt(1,30);
 			if(b<=5) {
-				makeenemy("Emerald Chicken",4,10,5);
+				makeenemy("翡翠鸡",4,10,5);
 			}
 			else if(b>=6 && b<=20) {
-				makeenemy("Angry Diamond Ch.",3,7,6);
+				makeenemy("超×怒钻鸡",3,7,6);
 			}
 			else {
 				if(Math.random()<0.3) {
-					makeenemy("Crazy Glitched Ch.",999999,1,6);
+					makeenemy("【【狂×故障鸡】】",999999,1,6);
 				}
 				else {
-					makeenemy("Angry Glitched Ch.",999999,1,3);
+					makeenemy("【【怒×故障鸡】】",999999,1,3);
 				}
 			}
 		}
@@ -2236,42 +2239,42 @@ function explorefurther() {
 		for(nbr=0;nbr<a;nbr++) {
 			b=getRandomInt(1,50);
 			if(b<=5) {
-				makeenemy("Emerald Chicken",4,10,5);
+				makeenemy("翡翠鸡",4,10,5);
 			}
 			else if(b>=6 && b<=10) {
-				makeenemy("Angry Emerald Ch.",4,10,8);
+				makeenemy("怒×翡翠鸡",4,10,8);
 			}
 			else if(b>=11 && b<=35) {
-				makeenemy("Angry Diamond Ch.",3,7,6);
+				makeenemy("怒×超钻鸡",3,7,6);
 			}
 			else {
 				if(Math.random()<0.3) {
-					makeenemy("Crazy Glitched Ch.",999999,1,6);
+					makeenemy("【【狂×故障鸡】】",999999,1,6);
 				}
 				else {
-					makeenemy("Angry Glitched Ch.",999999,1,3);
+					makeenemy("【【怒×故障鸡】】",999999,1,3);
 				}
 			}
 		}
 	}
 	else if(kmexplored>=1500 && kmexplored<1600) {
-		if(rubysearchstep==0)$(".notifications").html("It's weird since there are no more chickens :/");
+		if(rubysearchstep==0)$(".notifications").html("真扯淡，这里一根鸡毛都没有了 :/");
 	}
 	else if(kmexplored>=1600 && kmexplored<1700) {
-		if(rubysearchstep==0)$(".notifications").html("Where is the ruby chicken? I wanna eat ruby chicken nuggets so bad");
+		if(rubysearchstep==0)$(".notifications").html("我想要整点红宝石(?)鸡块。。。。");
 	}
 	else if(kmexplored>=1700 && kmexplored<1800) {
-		if(rubysearchstep==0)$(".notifications").html("This is my new mission! (Check title bar)");
+		if(rubysearchstep==0)$(".notifications").html("俺们的新任务! (眼神往上瞅)");
 		rubysearchstep++;
 	}
 	else if(kmexplored>=1800) {
-		makeenemy("cliff",0,0,0);
+		makeenemy("悬崖",0,0,0);
 	}
 	
-	if(rubysearchstep>0){if(kmexplored>=1500 && kmexplored<1800)$(".notifications").html("Still no chickens :/");}
+	if(rubysearchstep>0){if(kmexplored>=1500 && kmexplored<1800)$(".notifications").html("还是一根鸡毛都没有 :/");}
 	
 	if(kmexplored>=100 && items[23].owned==0) {
-		makeenemy("Chest",23,15,0);
+		makeenemy("箱子",23,15,0);
 	}
 	
 	update_battle();
@@ -2343,7 +2346,7 @@ function heal() {
 		battleinvt[1].owned--;
 		
 		if(healcd || bossbattleiscommencing) {
-			cd(7,"heal-battle","Heal (1 iron chicken nugget)");
+			cd(7,"heal-battle","治疗 (1 铁鸡块)");
 		}
 		
 		if(skills[7].owned) {
@@ -2403,12 +2406,12 @@ function placetpdevice() {
 			tpdevicekm=kmexplored;
 			console.log(tpdevicekm+"A");
 			battleinvt[2].owned--;
-			$(".notifications").html("The teleportation device has been placed");
+			$(".notifications").html("传送装置已被放置");
 			update_battle();
 		}
 	}
 	else {
-		alert('Oops! It seems that you don\'t have knowledge to use this thing, try learning the \'teleportation\' skill');
+		alert('干! 好像你现在还不知道这玩意怎么用吧, 去学 \'传送\' 技能先');
 	}
 }
 function tptotpdevice() {
@@ -2658,7 +2661,7 @@ function executecmd(cmd) {
 				setTimeout(function() {
 					$("#bossbattleftw").fadeIn(1000);
 						setTimeout(function() {
-							$(".notifications").html("You finally met <b>The Legendary Mutant Chicken</b>!! :o");
+							$(".notifications").html("终于你遇到了她，<b>传说中的变异鸡</b>!! :o");
 							bossbattle();
 						},1000);
 				},1000);
@@ -2732,16 +2735,16 @@ function addtolog(text) {
 function bangwall(dir) {
 	q=getRandomInt(1,4);
 	if(q==1) {
-		return "You can\'t go "+dir+" anymore";
+		return "你不能前进了 "+dir;
 	}
 	else if(q==2) {
-		return "Oops, there is a wall!";
+		return "干，前面有堵墙!";
 	}
 	else if(q==3) {
-		return "Bad idea, there is a wall here";
+		return "坏主意，前面有堵墙";
 	}
 	else if(q==4) {
-		return "Nope don't go "+dir+", there is a wall";
+		return "不能前进 "+dir+", 前面有堵墙";
 	}
 }
 
@@ -2931,11 +2934,11 @@ function bossbattle() {
 			else {
 				bossdmg=getRandomInt(15,25);
 				playerhp-=bossdmg;
-				$(".notifications").html("The Legendary Mutant Chicken threw a fireball to you and causing <b>"+bossdmg+"</b> HP damage!");
+				$(".notifications").html("传说中的变异鸡掏出了一个火球砸向你的大脸，造成了<b>"+bossdmg+"</b> HP 伤害!");
 				if(playerhp<=0) {
 					playerhp=1;
 					exitportal();
-					$(".notifications").html("Phew! You are almost dead!");
+					$(".notifications").html("嘿嘿，你挂了～");
 				}
 			}
 			updateboss();
@@ -2959,8 +2962,8 @@ function updateboss() {
 function attackboss() {
 	getbossdamage=getRandomInt(playerdmg-2,playerdmg+2);
 	bosshealth-=getbossdamage;
-	$(".notifications").html("You attacked The Legendary Mutant Chicken using "+playerweapon+" and causing <b>"+getbossdamage+"</b> HP damage to it!");
-	cd(getRandomInt(3,6),"attack-boss","Attack the legendary mutant chicken!");
+	$(".notifications").html("你用"+playerweapon+" 攻击了传说中的变异鸡，造成了<b>"+getbossdamage+"</b> HP 伤害!");
+	cd(getRandomInt(3,6),"attack-boss","攻击 传说中的变异鸡!");
 	if(bosshealth<=0) {
 		bosshealth=0;
 		endgame=true; // ULTIMATE WINNING!!!
@@ -2978,17 +2981,17 @@ function throwdiamondnugget() {
 		if(Math.random()<0.1) {
 			if(Math.random()<0.5) {
 				chickenstun+=getRandomInt(1,4);
-				$(".notifications").html("You threw a diamond nugget but and it gets into the chicken's mouth! The chicken is now stunned for a few seconds. You have <b>"+items[3].owned+"</b> nugget(s) left");
+				$(".notifications").html("你扔了个钻石鸡块到这鸡的嘴里! 丫被震晕了几秒. 剩余 <b>"+items[3].owned+"</b> 鸡块");
 			}
 			else {
 				damagegotten=getRandomInt(5,15);
 				bosshealth-=damagegotten;
-				$(".notifications").html("You threw a diamond nugget but and it gets into the chicken's mouth! The chicken gets an extra <b>"+bosshealth+"</b> HP damage. You have <b>"+items[3].owned+"</b> nugget(s) left");
+				$(".notifications").html("你扔了个钻石鸡块到这鸡的嘴里!! 丫还有<b>"+bosshealth+"</b> HP. 剩余<b>"+items[3].owned+"</b> 鸡块");
 				updateboss();
 			}
 		}
 		else {
-			$(".notifications").html("You threw a diamond nugget but it misses the chicken's mouth! You have <b>"+items[3].owned+"</b> nugget(s) left");
+			$(".notifications").html("你扔了个钻石鸡块，没～命～中～，剩余<b>"+items[3].owned+"</b> 鸡块");
 		}
 	}
 }
@@ -2997,7 +3000,7 @@ function runaway() {
 	bossbattleiscommencing=false;
 	if(typeof bossinterval !== "undefined")clearInterval(bossinterval);
 	exitportal();
-	$(".notifications").html("You finally choose to run away, maybe next time");
+	$(".notifications").html("逃吧孙子，下次再来试试爷的厉害");
 }
 
 /* SAVING FUNCTIONS */
@@ -3014,14 +3017,14 @@ function save(what,param2) {
 		save("splitter");
 	}
 	else if(what=="reset") {
-		if(confirm("Are you sure to reset your game?")) {
-			if(confirm("Really?")) {
-				if(confirm("You can't undo after reset")) {
-					if(confirm("Maybe you want to save the save as text first?")) {
-						if(confirm("This is the last confirmation, once you press OK, your game progress will lost forever (a long time!)")) {
+		if(confirm("确定重置游戏?")) {
+			if(confirm("确定?")) {
+				if(confirm("重置以后啥都没有了！")) {
+					if(confirm("你要先保存一下么?")) {
+						if(confirm("最后一次警告，确定之后，你就毛也没有了")) {
 							localStorage.chickensgamesave="";
 							$("body").hide();
-							alert('Your game has been reset, enjoy! :D');
+							alert('游戏已重置, 孙子! :D');
 							window.location=self.location;
 						}
 					}
@@ -3033,7 +3036,7 @@ function save(what,param2) {
 		prompt("Here's your save code",save("string"));
 	}
 	else if(what=="import") {
-		code=prompt("Enter the save code (once you imported your game, it will be saved automatically and this page will be refreshed)","");
+		code=prompt("导入游戏Code (导入之后游戏将自动保存)","");
 		if(code!=null && code!="") {
 			save("splitter",code);
 			save("local");
@@ -3159,11 +3162,11 @@ function save(what,param2) {
 function thefinal() {
 	playerhp=0;
 	$("#transparentmask").show();
-	$(".notifications").html("NO! The chicken threw it's super fireball before it dies and killed you instantly! You didn't expect this, thus you can't avoid it! :o");
+	$(".notifications").html("噢噢噢噢日! 丫在死之前丢出来一个脸盆大的火球，杀死了你! 太操蛋了，你压根没想到闪躲。你死了 :o");
 	setTimeout(function() {
 		$("#whitemask").fadeIn("slow");
 		$(".notifications").html("");
-		console.log("\n\nWell, luckily there's a console magic ;)\nType \"respawn()\" to respawn and enjoy those ruby chicken nuggets!\nLong live the developers!!!! :D\n\n");
+		console.log("\n\n来，告诉你个小秘密 ;)\n输入 \"respawn()\" 然后你就懂了!\n开发者万岁（翻译者也万岁）!!!! :D\n\n");
 	},7500);
 }
 
@@ -3182,21 +3185,21 @@ function cookruby(qty) {
 	$("#rcmqty").html(rubymeats);
 	$("#rcnqty").html(rubynuggets);
 	if(rubymeats<0) {
-		$(".notifications").html("Nobody cares about negative quantity of the meat, JUST EAT AS MANY AS YOU CAN!!!!!!");
+		$(".notifications").html("没人在意这些鸡块的数量，所以，放开了吃吧！");
 	}
 	else {
-		$(".notifications").html("The newly cooked ruby chicken nugget smells very good! Can't wait to eat it!");
+		$(".notifications").html("热乎乎的红宝石鸡块看起来好赞，简直等不及了哦");
 	}
 }
 
 function eatruby() {
 	if(rubynuggets>0) {
 		rubynuggets--;
-		$(".notifications").html("DUDE! THIS IS THE BEST THING EVER!!! YOU MSUT EAT THIS!! THIS IS SUPER DELICIOUS!!!! NOMNOMNOMNOM");
+		$(".notifications").html("大哥! 我保证这是有史以来最赞的!!! 你一定要试试，超美味!!!! NOMNOMNOMNOM");
 		$("#rcmqty").html(rubymeats);
 		$("#rcnqty").html(rubynuggets);
 	}
 	else {
-		$(".notifications").html("Oops, no ruby nuggets, better cook some more");
+		$(".notifications").html("哦日, 没红宝石鸡块了，你得自己再去整点过来");
 	}
 }

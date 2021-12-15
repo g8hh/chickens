@@ -261,7 +261,7 @@ function update() {
 		$(".misc-heading").show();
 	}
 
-	$(".skill-exploration").val("Exploration "+parseInt(skills[3].level+1)+" ("+Math.round(Math.pow(10*(skills[3].level+1),0.8))+" gold chicken nuggets)");
+	$(".skill-exploration").val("探索 "+parseInt(skills[3].level+1)+" ("+Math.round(Math.pow(10*(skills[3].level+1),0.8))+" 金鸡块)");
 
 	if(items[15].owned==1) {
 		$(".trade-furnace").hide();
@@ -463,7 +463,7 @@ function update() {
 		}
 	}
 
-	$(".craft-robot").val("Make a Robot ("+Math.round(Math.pow(10*(items[18].owned+1),1.5))+" iron chicken nuggets)");
+	$(".craft-robot").val("制作机器人 ("+Math.round(Math.pow(10*(items[18].owned+1),1.5))+" 铁鸡块)");
 
 	/* ARMOR STUFFS */
 
@@ -673,9 +673,9 @@ function update() {
 		$("#mini-invt").html(qwe+'<tr><td class="invt-item-name">'+totitlecase(items[battleinvt[q].itemid].name)+'</td><td class="invt-item-owned">'+battleinvt[q].owned+'</td></tr>');
 	}
 
-	$(".trade-tpdevice input").val("Trade a teleportation device for 2 diamond chicken meats ("+tpdevicestock+" left)");
+	$(".trade-tpdevice input").val("用传送装置换取 2 钻石鸡肉 ("+tpdevicestock+" 剩余)");
 
-	if(rubysearchstep>0)document.title="Chickens!: The Quest of the Ruby Chicken Meat";
+	if(rubysearchstep>0)document.title="杀鸡！：红宝石鸡肉的探索";
 
 	if(getscroll) {
 		if(tool<=10)$("#craft-chickenators").show();
@@ -772,8 +772,8 @@ function cdc(countdown,id,val) {
 }
 
 function togglesound() {
-	if(usesound){usesound=false;alert('Sound disabled');}
-	else{usesound=true;alert('Sound enabled');}
+	if(usesound){usesound=false;alert('声音已禁用');}
+	else{usesound=true;alert('声音已启用');}
 }
 function togglecolor() {
 	$("body").toggleClass("wob");
@@ -1036,7 +1036,7 @@ function slaychicken() {
 	if(skills[0].owned) {
 		countdown-=2;
 	}
-	cd(countdown,"slay-chicken","Slay chicken");
+	cd(countdown,"slay-chicken","杀鸡");
 
 	update();
 
@@ -1171,7 +1171,7 @@ function furnace(what,qty) {
 			items[0].owned-=qty;
 			items[10].owned+=qty;
 			$(".notifications").html("Chicken nugget is delicious, yummy!");
-			cdc(secs,"furnace-chicken-nugget","1 Chicken Meat -> 1 Chicken Nugget");
+			cdc(secs,"furnace-chicken-nugget","1 鸡肉 -> 1 鸡块");
 			cdc(secs,"furnace-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-chicken-nugget-thousand","x1000");
@@ -1182,7 +1182,7 @@ function furnace(what,qty) {
 			items[0].owned-=qty;
 			items[5].owned+=qty;
 			$(".notifications").html("This chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-chicken-meat","1 Chicken Meat -> 1 Hardened Chicken Meat");
+			cdc(secs,"furnace-hardened-chicken-meat","1 鸡肉 -> 1 硬化鸡肉");
 			cdc(secs,"furnace-hardened-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-chicken-meat-thousand","x1000");
@@ -1193,7 +1193,7 @@ function furnace(what,qty) {
 			items[1].owned-=qty;
 			items[11].owned+=qty;
 			$(".notifications").html("Iron chicken nugget is very delicious, yummy!");
-			cdc(secs,"furnace-iron-chicken-nugget","1 Iron Chicken Meat -> 1 Iron Chicken Nugget");
+			cdc(secs,"furnace-iron-chicken-nugget","1 铁鸡肉 -> 1 铁鸡块");
 			cdc(secs,"furnace-iron-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-iron-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-iron-chicken-nugget-thousand","x1000");
@@ -1204,7 +1204,7 @@ function furnace(what,qty) {
 			items[1].owned-=qty;
 			items[6].owned+=qty;
 			$(".notifications").html("This iron chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-iron-chicken-meat","1 Iron Chicken Meat -> 1 Hardened Iron Chicken Meat");
+			cdc(secs,"furnace-hardened-iron-chicken-meat","1 铁鸡肉 -> 1 硬化铁鸡块");
 			cdc(secs,"furnace-hardened-iron-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-iron-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-iron-chicken-meat-thousand","x1000");
@@ -1215,7 +1215,7 @@ function furnace(what,qty) {
 			items[2].owned-=qty;
 			items[12].owned+=qty;
 			$(".notifications").html("Gold chicken nugget is more delicious than iron chicken nugget, yummy!");
-			cdc(secs,"furnace-gold-chicken-nugget","1 Gold Chicken Meat -> 1 Gold Chicken Nugget");
+			cdc(secs,"furnace-gold-chicken-nugget","1 金鸡肉 -> 1 金鸡块");
 			cdc(secs,"furnace-gold-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-gold-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-gold-chicken-nugget-thousand","x1000");
@@ -1226,7 +1226,7 @@ function furnace(what,qty) {
 			items[2].owned-=qty;
 			items[7].owned+=qty;
 			$(".notifications").html("This gold chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-gold-chicken-meat","1 Gold Chicken Meat -> 1 Hardened Gold Chicken Meat");
+			cdc(secs,"furnace-hardened-gold-chicken-meat","1 金鸡肉 -> 1 硬化金鸡肉");
 			cdc(secs,"furnace-hardened-gold-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-gold-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-gold-chicken-meat-thousand","x1000");
@@ -1237,7 +1237,7 @@ function furnace(what,qty) {
 			items[3].owned-=qty;
 			items[13].owned+=qty;
 			$(".notifications").html("Diamond chicken nugget is very very delicious asdfhvryuiery");
-			cdc(secs,"furnace-diamond-chicken-nugget","1 Diamond Chicken Meat -> 1 Diamond Chicken Nugget");
+			cdc(secs,"furnace-diamond-chicken-nugget","1 钻石鸡肉 -> 1 钻石鸡块");
 			cdc(secs,"furnace-diamond-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-diamond-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-diamond-chicken-nugget-thousand","x1000");
@@ -1248,7 +1248,7 @@ function furnace(what,qty) {
 			items[3].owned-=qty;
 			items[8].owned+=qty;
 			$(".notifications").html("This diamond chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-diamond-chicken-meat","1 Diamond Chicken Meat -> 1 Hardened Diamond Chicken Meat");
+			cdc(secs,"furnace-hardened-diamond-chicken-meat","1 钻石鸡肉 -> 1 硬化钻石鸡肉");
 			cdc(secs,"furnace-hardened-diamond-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-diamond-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-diamond-chicken-meat-thousand","x1000");
@@ -1259,7 +1259,7 @@ function furnace(what,qty) {
 			items[4].owned-=qty;
 			items[14].owned+=qty;
 			$(".notifications").html("Emerald chicken nugget is super delicious, although I believe emerald chicken nugget is more delicious, though");
-			cdc(secs,"furnace-emerald-chicken-nugget","1 Emerald Chicken Meat -> 1 Emerald Chicken Nugget");
+			cdc(secs,"furnace-emerald-chicken-nugget","1 翡翠鸡肉 -> 1 翡翠鸡块");
 			cdc(secs,"furnace-emerald-chicken-nugget-ten","x10");
 			cdc(secs,"furnace-emerald-chicken-nugget-hundred","x100");
 			cdc(secs,"furnace-emerald-chicken-nugget-thousand","x1000");
@@ -1270,7 +1270,7 @@ function furnace(what,qty) {
 			items[4].owned-=qty;
 			items[9].owned+=qty;
 			$(".notifications").html("This emerald chicken meat is hardened to make it stronger, yay!");
-			cdc(secs,"furnace-hardened-emerald-chicken-meat","1 Emerald Chicken Meat -> 1 Hardened Emerald Chicken Meat");
+			cdc(secs,"furnace-hardened-emerald-chicken-meat","1 翡翠鸡肉 -> 1 硬化翡翠鸡肉");
 			cdc(secs,"furnace-hardened-emerald-chicken-meat-ten","x10");
 			cdc(secs,"furnace-hardened-emerald-chicken-meat-hundred","x100");
 			cdc(secs,"furnace-hardened-emerald-chicken-meat-thousand","x1000");
@@ -1484,7 +1484,7 @@ function rolldice() {
 	if(!isNaN(parseFloat(qty)) && parseFloat(qty) != "") {
 		qty=Math.abs(Math.round(parseFloat(qty)));
 		if(qty>items[what].owned) {
-			alert('You can\'t give what you don\'t have :(');
+			alert('你不能给予你没有的东西 :(');
 		}
 		else {
 			items[what].owned-=qty;
@@ -1510,18 +1510,18 @@ function chickenatorprice() {
 	if(tool==10){weaponversion=9999; times=1;}
 
 	if(tool==5) {
-		beginword='To craft a Chickenator '+weaponversion;
+		beginword='制作一只小鸡 '+weaponversion;
 	}
 	else {
-		beginword='To upgrade your current Chickenator to Chickenator '+weaponversion;
+		beginword='将您当前的 小鸡 升级为 小鸡 '+weaponversion;
 	}
 
-	alert(beginword+', you will need:\n\n'+times+' Hardened Emerald Chicken Meat\n'+times*10+' Hardened Diamond Chicken Meats\n'+times*100+' Hardened Gold Chicken Meats\n'+times*1000+' Hardened Iron Chicken Meats\n'+times*10000+' Hardened Chicken Meats');
+	alert(beginword+', 你将会需要:\n\n'+times+' 硬化翡翠鸡肉\n'+times*10+' 硬化钻石鸡肉\n'+times*100+' 硬化金鸡肉\n'+times*1000+' 硬化铁鸡肉\n'+times*10000+' 硬化鸡肉');
 }
 
 function cipherclue() {
 	if(items[14].owned<1) {
-		alert('Oops, you doesn\'t seem have an emerald chicken nugget');
+		alert('哎呀，你好像没有翡翠鸡块');
 	}
 	else {
 		items[14].owned--;
@@ -1544,7 +1544,7 @@ setInterval(function() {
 		playerhp-=totaldmg;
 		if(playerhp<=0 && !endgame) {
 			playerhp=1;
-			cd(Math.round(kmexplored/10),"enter-portal","enter the portal!");
+			cd(Math.round(kmexplored/10),"enter-portal","进入传送门!");
 			exitportal("die");
 			$(".notifications").html("You almost died in battle, phew!");
 		}
@@ -1675,10 +1675,10 @@ function update_battle() {
 		for(i=0;i<enemies.length;i++) {
 			if(!enemies[i].isdead) {
 				if(enemies[i].iscd==0) {
-					atkbutton='<input type="button" value="Attack!" onclick="attackenemy('+i+')" id="attack-enemy-'+i+'">';
+					atkbutton='<input type="button" value="攻击!" onclick="attackenemy('+i+')" id="attack-enemy-'+i+'">';
 				}
 				else {
-					atkbutton='<input type="button" value="Attack! ['+enemies[i].iscd+']" onclick="attackenemy('+i+')" id="attack-enemy-'+i+'" disabled="disabled">';
+					atkbutton='<input type="button" value="攻击! ['+enemies[i].iscd+']" onclick="attackenemy('+i+')" id="attack-enemy-'+i+'" disabled="disabled">';
 				}
 
 				if(enemies[i].name.substr(0,5)=="Angry") {
@@ -1706,10 +1706,10 @@ function update_battle() {
 				if(!thisdrop.taken) {
 					if(thisdrop.from!="no show") {
 						if(thisdrop.iscd==0) {
-							takebutton='<input type="button" value="Take!" onclick="takedrop('+enemies[i].id+')" id="take-drop-'+enemies[i].id+'">';
+							takebutton='<input type="button" value="拿走!" onclick="takedrop('+enemies[i].id+')" id="take-drop-'+enemies[i].id+'">';
 						}
 						else {
-							takebutton='<input type="button" value="Take! ['+thisdrop.iscd+']" onclick="takedrop('+enemies[i].id+')" id="take-drop-'+enemies[i].id+'">';
+							takebutton='<input type="button" value="拿走! ['+thisdrop.iscd+']" onclick="takedrop('+enemies[i].id+')" id="take-drop-'+enemies[i].id+'">';
 						}
 
 						asddsa=thisdrop.drop;
@@ -1830,7 +1830,7 @@ function enterportal() {
 				tpdqty=Math.abs(Math.round(parseFloat(tpdqty)));
 
 				if(cnqty>items[10].owned || icnqty>items[11].owned || tpdqty>items[26].owned) {
-					alert('You can\'t bring what you don\'t have');
+					alert('你不能带来你没有的东西');
 				}
 				else {
 
@@ -2345,7 +2345,7 @@ function heal() {
 		battleinvt[1].owned--;
 
 		if(healcd || bossbattleiscommencing) {
-			cd(7,"heal-battle","Heal (1 iron chicken nugget)");
+			cd(7,"heal-battle","治疗 (1 铁鸡块)");
 		}
 
 		if(skills[7].owned) {
@@ -2365,13 +2365,13 @@ function heal() {
 }
 function cdb(countdown,id) {
 	if(countdown==0) {
-		$("#attack-enemy-"+id).removeAttr("disabled").val("Attack!");
+		$("#attack-enemy-"+id).removeAttr("disabled").val("攻击!");
 		enemies[id].iscd=0;
 	}
 	else {
 		enemies[id].iscd=countdown;
 		$("#attack-enemy-"+id).attr("disabled","disabled");
-		$("#attack-enemy-"+id).val("Attack! ["+countdown+"]");
+		$("#attack-enemy-"+id).val("攻击! ["+countdown+"]");
 		setTimeout(function() {
 			countdown--;
 			cdb(countdown,id);
@@ -2392,7 +2392,7 @@ function cdi(countdown,id) {
 	}
 	else {
 		thisdrop.iscd=countdown;
-		$("#take-drop-"+id).val("Take! ["+countdown+"]");
+		$("#take-drop-"+id).val("拿走! ["+countdown+"]");
 		dropscd.push(setTimeout(function() {
 			countdown--;
 			cdi(countdown,id);
@@ -2410,7 +2410,7 @@ function placetpdevice() {
 		}
 	}
 	else {
-		alert('Oops! It seems that you don\'t have knowledge to use this thing, try learning the \'teleportation\' skill');
+		alert('哎呀！ 看来你没有知识使用这东西，试试学一下\'传送\'技能');
 	}
 }
 function tptotpdevice() {
@@ -3016,14 +3016,14 @@ function save(what,param2) {
 		save("splitter");
 	}
 	else if(what=="reset") {
-		if(confirm("Are you sure to reset your game?")) {
-			if(confirm("Really?")) {
-				if(confirm("You can't undo after reset")) {
-					if(confirm("Maybe you want to save the save as text first?")) {
-						if(confirm("This is the last confirmation, once you press OK, your game progress will lost forever (a long time!)")) {
+		if(confirm("你确定要重置你的游戏吗？")) {
+			if(confirm("真的要这么做吗?")) {
+				if(confirm("重置后无法撤消")) {
+					if(confirm("也许您想先将另存为文本保存？")) {
+						if(confirm("这是最后一次确认，一旦按确定，您的游戏进度将永远丢失（很长一段时间！）")) {
 							localStorage.chickensgamesave="";
 							$("body").hide();
-							alert('Your game has been reset, enjoy! :D');
+							alert('您的游戏已重置，尽情享受吧！ :D');
 							window.location=self.location;
 						}
 					}
@@ -3032,10 +3032,10 @@ function save(what,param2) {
 		}
 	}
 	else if(what=="export") {
-		prompt("Here's your save code",save("string"));
+		prompt("这是您的存档代码",save("string"));
 	}
 	else if(what=="import") {
-		code=prompt("Enter the save code (once you imported your game, it will be saved automatically and this page will be refreshed)","");
+		code=prompt("输入存档（导入游戏后会自动保存，刷新页面）","");
 		if(code!=null && code!="") {
 			save("splitter",code);
 			save("local");
@@ -3046,7 +3046,7 @@ function save(what,param2) {
 		if(autosave) {
 			autosave=false;
 			if(typeof autosaveinterval !== "undefined")clearInterval(autosaveinterval);
-			alert('Autosave disabled');
+			alert('自动保存已禁用');
 		}
 		else {
 			autosave=true;
@@ -3058,7 +3058,7 @@ function save(what,param2) {
 				}
 				$("#autosave-cd").html(autosavetime);
 			},1000);
-			alert('Autosave enabled');
+			alert('自动保存已启用');
 		}
 	}
 	else if(what=="string") {

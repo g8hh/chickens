@@ -320,12 +320,12 @@
 			<input type="button" value="用 300 鸡肉 换取 另一个古老的卷轴" onclick="trade('scroll2')" class="trade-scroll2" style="display:none;">
 			<input type="button" value="用 10 钻石鸡肉 换取 最好的熔炉" onclick="trade('furnace4')" class="trade-furnace4" style="display:none;">
 			<input type="button" value="用 1 金鸡块 换取 小麦" onclick="trade('wheat')" class="trade-wheat" style="display:none;">
-			<input type="button" value="Trade medicine with 30 wheat" onclick="trade('medicine')" class="trade-medicine" style="display:none;">
-			<div class="trade-tpdevice" style="display:none;"><input type="button" value="Trade a teleportation device for 2 diamond chicken meats (5 left)" onclick="trade('tpdevice')">&nbsp;&nbsp;&nbsp;(<a href="#" onclick="alert('Buy this awesome stuff and you can place it whereever you want in the chickenverse, once you place this amazing stuff, you will be able to teleport to where you put this awesome stuff!\n\nIf you place this awesome stuff and it turns out that you have placed one before, that device will break automatically and when you teleport, you will be teleported to the where you place the new one\n\nPS: You can\'t pick up this awesome stuff after placing it\nPPS: You need teleportation skill to use this awesome thing\nPPPS: The trader has limited stock of this thing, so use it wisely :)')">What in the world is this and how it works</a>)</div>
-			<input type="button" value="Trade compass with 100 emerald chicken nuggets" onclick="trade('compass')" class="trade-compass" style="display:none;">
+			<input type="button" value="用 30 小麦 换取 药物" onclick="trade('medicine')" class="trade-medicine" style="display:none;">
+			<div class="trade-tpdevice" style="display:none;"><input type="button" value="用传送装置换取 2 个钻石鸡肉（剩余 5 个）" onclick="trade('tpdevice')">&nbsp;&nbsp;&nbsp;(<a href="#" onclick="alert('买这个很棒的东西，你可以把它放在你想要的鸡舍里，一旦你把这个很棒的东西放在那里，你就可以传送到你放这个很棒的东西的地方！\n\n如果你把这个很棒的东西放在那里，结果如果您之前放置过一个，该设备会自动损坏，当您传送时，您将被传送到放置新设备的位置 \n\nPS：放置后您无法捡起这个很棒的东西 \nPPS：你需要传送技能才能使用这个很棒的东西\nPPPS：交易者库存有限，所以明智地使用它 :)')">What in the world is this and how it works</a>)</div>
+			<input type="button" value="用 100 个翡翠鸡块 换取 指南针" onclick="trade('compass')" class="trade-compass" style="display:none;">
 			<div id="dicegame" style="display:none;">
 				<br>
-				The trader wants to play a "dice game" with you (<a href="#" onclick="alert('Decide what and how many you will give the trader and the trader will roll a dice\nIf the dice lands on number 1 or 6, you will get 3 times as many as what you give the trader. Otherwise, you won\'t get anything\n\nBut, if the dice always lands on number 4, it means that the programmer is a unfair :(');">More info about this game</a>)<br>
+				The trader wants to play a "dice game" with you (<a href="#" onclick="alert('决定你给交易者什么东西和数量，交易者将掷骰子 \n如果骰子落在 1 或 6 号，你将得到你给交易者的 3 倍。 否则，你什么都不会得到\n\n但是，如果骰子总是落在4号上，那就意味着程序员是一个不公平的人 :(');">More info about this game</a>)<br>
 				<div style="height:7px;"></div>
 				Give <input type="text" id="dicegame-qty" placeholder="qty" size="3">
 				<select id="dicegame-what">
@@ -473,7 +473,7 @@ Well, the nuggets are magically taken<br>from your "real world" inventory.<br>So
 				Chestplate: <span id="player-chestplate"></span><br>
 				Leggings: <span id="player-leggings"></span><br>
 				Boots: <span id="player-boots"></span><br><br>
-				<input type="button" value="Heal (1 iron chicken nugget)" id="heal-battle" onclick="heal()">
+				<input type="button" value="治疗 (1 铁鸡块)" id="heal-battle" onclick="heal()">
 			</div>
 			<br>
 			<fieldset>
@@ -528,10 +528,10 @@ Well, the nuggets are magically taken<br>from your "real world" inventory.<br>So
 		- There are <b class="chickens-pop">1000</b> chickens<br>
 		- There are <b class="iron-chickens-pop">1000</b> iron chickens<br>
 		- There are <b class="gold-chickens-pop">1000</b> gold chickens<br><br>
-		<input type="button" value="Use wheat to breed chickens" class="breed-chickens" onclick="breed('chicken')">
-		<input type="button" value="Use wheat to breed iron chickens" class="breed-iron-chickens" onclick="breed('iron chicken')">
-		<input type="button" value="Use wheat to breed gold chickens" class="breed-gold-chickens" onclick="breed('gold chicken')">
-		<input type="button" value="Use medicine to get more chickens faster" class="use-medicine" onclick="breed('medicine')" style="display:none;"><br>
+		<input type="button" value="用小麦养 普通鸡" class="breed-chickens" onclick="breed('chicken')">
+		<input type="button" value="用小麦养 铁鸡" class="breed-iron-chickens" onclick="breed('iron chicken')">
+		<input type="button" value="用小麦养 金鸡" class="breed-gold-chickens" onclick="breed('gold chicken')">
+		<input type="button" value="使用药物更快地获得更多的鸡" class="use-medicine" onclick="breed('medicine')" style="display:none;"><br>
 		<div id="chickens-overbreed">Those chickens won't breed if there are too many of them</div>
 	</div>
 

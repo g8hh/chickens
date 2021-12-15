@@ -1544,7 +1544,7 @@ setInterval(function() {
 		playerhp-=totaldmg;
 		if(playerhp<=0 && !endgame) {
 			playerhp=1;
-			cd(Math.round(kmexplored/10),"enter-portal","enter the portal!");
+			cd(Math.round(kmexplored/10),"enter-portal","进入传送门!");
 			exitportal("die");
 			$(".notifications").html("You almost died in battle, phew!");
 		}
@@ -1675,10 +1675,10 @@ function update_battle() {
 		for(i=0;i<enemies.length;i++) {
 			if(!enemies[i].isdead) {
 				if(enemies[i].iscd==0) {
-					atkbutton='<input type="button" value="Attack!" onclick="attackenemy('+i+')" id="attack-enemy-'+i+'">';
+					atkbutton='<input type="button" value="攻击!" onclick="attackenemy('+i+')" id="attack-enemy-'+i+'">';
 				}
 				else {
-					atkbutton='<input type="button" value="Attack! ['+enemies[i].iscd+']" onclick="attackenemy('+i+')" id="attack-enemy-'+i+'" disabled="disabled">';
+					atkbutton='<input type="button" value="攻击! ['+enemies[i].iscd+']" onclick="attackenemy('+i+')" id="attack-enemy-'+i+'" disabled="disabled">';
 				}
 
 				if(enemies[i].name.substr(0,5)=="Angry") {
@@ -1706,10 +1706,10 @@ function update_battle() {
 				if(!thisdrop.taken) {
 					if(thisdrop.from!="no show") {
 						if(thisdrop.iscd==0) {
-							takebutton='<input type="button" value="Take!" onclick="takedrop('+enemies[i].id+')" id="take-drop-'+enemies[i].id+'">';
+							takebutton='<input type="button" value="拿走!" onclick="takedrop('+enemies[i].id+')" id="take-drop-'+enemies[i].id+'">';
 						}
 						else {
-							takebutton='<input type="button" value="Take! ['+thisdrop.iscd+']" onclick="takedrop('+enemies[i].id+')" id="take-drop-'+enemies[i].id+'">';
+							takebutton='<input type="button" value="拿走! ['+thisdrop.iscd+']" onclick="takedrop('+enemies[i].id+')" id="take-drop-'+enemies[i].id+'">';
 						}
 
 						asddsa=thisdrop.drop;
@@ -2345,7 +2345,7 @@ function heal() {
 		battleinvt[1].owned--;
 
 		if(healcd || bossbattleiscommencing) {
-			cd(7,"heal-battle","Heal (1 iron chicken nugget)");
+			cd(7,"heal-battle","治疗 (1 铁鸡块)");
 		}
 
 		if(skills[7].owned) {
@@ -2410,7 +2410,7 @@ function placetpdevice() {
 		}
 	}
 	else {
-		alert('哎呀！ 看来你没有知识使用这东西，试试学一下'传送'技能');
+		alert('哎呀！ 看来你没有知识使用这东西，试试学一下\'传送\'技能');
 	}
 }
 function tptotpdevice() {

@@ -321,7 +321,7 @@
 			<input type="button" value="用 10 钻石鸡肉 换取 最好的熔炉" onclick="trade('furnace4')" class="trade-furnace4" style="display:none;">
 			<input type="button" value="用 1 金鸡块 换取 小麦" onclick="trade('wheat')" class="trade-wheat" style="display:none;">
 			<input type="button" value="用 30 小麦 换取 药物" onclick="trade('medicine')" class="trade-medicine" style="display:none;">
-			<div class="trade-tpdevice" style="display:none;"><input type="button" value="用传送装置换取 2 个钻石鸡肉（剩余 5 个）" onclick="trade('tpdevice')">&nbsp;&nbsp;&nbsp;(<a href="#" onclick="alert('买这个很棒的东西，你可以把它放在你想要的鸡舍里，一旦你把这个很棒的东西放在那里，你就可以传送到你放这个很棒的东西的地方！\n\n如果你把这个很棒的东西放在那里，结果如果您之前放置过一个，该设备会自动损坏，当您传送时，您将被传送到放置新设备的位置 \n\nPS：放置后您无法捡起这个很棒的东西 \nPPS：你需要传送技能才能使用这个很棒的东西\nPPPS：交易者库存有限，所以明智地使用它 :)')">What in the world is this and how it works</a>)</div>
+			<div class="trade-tpdevice" style="display:none;"><input type="button" value="用 2 个钻石鸡肉 换取传送装置（剩余 5 个）" onclick="trade('tpdevice')">&nbsp;&nbsp;&nbsp;(<a href="#" onclick="alert('买这个很棒的东西，你可以把它放在你想要的鸡舍里，一旦你把这个很棒的东西放在那里，你就可以传送到你放这个很棒的东西的地方！\n\n如果你把这个很棒的东西放在那里，如果您之前放置过一个，该设备会自动损坏，当您传送时，您将被传送到放置新设备的位置 \n\nPS：放置后您无法捡起这个很棒的东西 \nPPS：你需要传送技能才能使用这个很棒的东西\nPPPS：交易者库存有限，所以明智地使用它 :)')">What in the world is this and how it works</a>)</div>
 			<input type="button" value="用 100 个翡翠鸡块 换取 指南针" onclick="trade('compass')" class="trade-compass" style="display:none;">
 			<div id="dicegame" style="display:none;">
 				<br>
@@ -363,7 +363,7 @@
 </pre><br>
 Raw cipher text: <input type="text" value="UaIYeebcaZIeebbIaJcacbZZcdLebZedbcccaIbaaaMITcIebIbIZbIbaZIZbdcIaZKWaedIdddIeIacZeeIbaaaddcZIbIMZZceaIaNbcbbIaeKccZcabIcIdedLYdaabaedcbaZdaccIacZYcaZaIcYcdaceeIbaaaLCccbGrXoHl3gGlC4GgGrXoXjH5GyCnGn2yGzXy3gG6Sti4Gg2t2pnpnpCmXgXgXzGpioXpnt3gmxWgksWvX6X3S6iwioSvnhGzShXwHsXvHsXgSxGz2yygn4HsXgXgmlHjHsSyXpSgHg3gGpmsG53g2xHjGyG2HsS034XgHgGpGsWvX6X3Sly53lCgn4G2XrDyzg2t2piyWrX3GyC1jgXzinGn2yH52pHgHpG034Xt3gG6WpGzi4GzmgGpmpCmymmy2yy4H3StGxyti4GgWl3g2xSlX5nsHsS034XgWwCmSinr2oilmgWwCmmyyj3gHgGpEsWvX6X3SyjKkz2gHny=lJdcxBklJZFVB1lhdg1BBkx9pdBgIJxBFdIVgddJZB4ABNNBBhJhgd51wlhgclBhBF4MMxk5g1BllhBZAMxddJZBBlwlZJEQx9BthVAcZB1lJtchlZhIldFdF8xkBB11BNBlBBkJgVBNghBZA1BAllBg1B1BkMxddJZAAtglE" readonly="readonly" size="50"><br><br>
 				Luckily the trader has a friend that is very clever in deciphering codes, he is willing to help you,<br>but you should give him an emerald chicken nugget as a thanks<br><br>
-				<input type="button" value="Ask trader's friend for help and give him an emerald chicken nugget" onclick="cipherclue()" class="cipher-clue-button">
+				<input type="button" value="向商人的朋友寻求帮助，并给他一块翡翠鸡块" onclick="cipherclue()" class="cipher-clue-button">
 				<br>
 				<div id="cipherclue" style="display:none;">
 					The trader's friend said thanks and gives you the clue<br>
@@ -411,7 +411,7 @@ Raw cipher text: <input type="text" value="UaIYeebcaZIeebbIaJcacbZZcdLebZedbccca
 			<b>WARNING: </b> Never kill any types of Glitched Chicken, killing it may glitch the game.<br>But don't worry, just kill other enemies and the "explore further" button will be enabled
 		</div>
 		<div id="adventure" class="hidden">
-			<div id="adv-buttons"><input type="button" value="深入探索" onclick="explorefurther()" id="explore-further"> <input type="button" value="返回真实世界" onclick="exitportal('button')" id="exit-portal"><div id="use-tpdevice" style="display:none;">&nbsp;<input type="button" value="Place a teleportation device" onclick="placetpdevice()"></div>&nbsp;&nbsp;&nbsp;<span class="km-explored">0</span> km explored</div>
+			<div id="adv-buttons"><input type="button" value="深入探索" onclick="explorefurther()" id="explore-further"> <input type="button" value="返回真实世界" onclick="exitportal('button')" id="exit-portal"><div id="use-tpdevice" style="display:none;">&nbsp;<input type="button" value="放置传送装置" onclick="placetpdevice()"></div>&nbsp;&nbsp;&nbsp;<span class="km-explored">0</span> km explored</div>
 			<div id="battle-log"></div>
 			<div style="clear:both;"></div><br><br>
 		</div>

@@ -1036,7 +1036,7 @@ function slaychicken() {
 	if(skills[0].owned) {
 		countdown-=2;
 	}
-	cd(countdown,"slay-chicken","Slay chicken");
+	cd(countdown,"slay-chicken","杀鸡");
 
 	update();
 

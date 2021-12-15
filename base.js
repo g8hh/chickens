@@ -673,7 +673,7 @@ function update() {
 		$("#mini-invt").html(qwe+'<tr><td class="invt-item-name">'+totitlecase(items[battleinvt[q].itemid].name)+'</td><td class="invt-item-owned">'+battleinvt[q].owned+'</td></tr>');
 	}
 
-	$(".trade-tpdevice input").val("用传送装置换取 2 钻石鸡肉 ("+tpdevicestock+" 剩余)");
+	$(".trade-tpdevice input").val("用 2 钻石鸡肉 换取传送装置("+tpdevicestock+" 剩余)");
 
 	if(rubysearchstep>0)document.title="杀鸡！：红宝石鸡肉的探索";
 
@@ -1763,7 +1763,7 @@ scroll='\n\
 	}
 
 	if(kmexplored==0 && tpdevicekm!=0) {
-		$("#battle-log").html('<input type="button" value="Teleport to the teleport device! ('+tpdevicekm+' km)" id="button-tp" onclick="tptotpdevice()">');
+		$("#battle-log").html('<input type="button" value="传送到传送装置! ('+tpdevicekm+' km)" id="button-tp" onclick="tptotpdevice()">');
 	}
 
 	if(totalenemies==0) {

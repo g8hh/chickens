@@ -2681,16 +2681,16 @@ function executecmd(cmd) {
 	if(playerlocation.substring(0,4)=="cave") {
 		cavepos=playerlocation.replace("cave","").split("x");
 		if(roomexist(cavepos[0],parseInt(cavepos[1])+1)) {
-			$("#cangoto").html($("#cangoto").html()+"north (&uarr;), ");
+			$("#cangoto").html($("#cangoto").html()+"北 (&uarr;), ");
 		}
 		if(roomexist(parseInt(cavepos[0])+1,cavepos[1])) {
-			$("#cangoto").html($("#cangoto").html()+"east (&rarr;), ");
+			$("#cangoto").html($("#cangoto").html()+"东 (&rarr;), ");
 		}
 		if(roomexist(cavepos[0],parseInt(cavepos[1])-1)) {
-			$("#cangoto").html($("#cangoto").html()+"south (&darr;), ");
+			$("#cangoto").html($("#cangoto").html()+"南 (&darr;), ");
 		}
 		if(roomexist(parseInt(cavepos[0])-1,cavepos[1])) {
-			$("#cangoto").html($("#cangoto").html()+"west (&larr;), ");
+			$("#cangoto").html($("#cangoto").html()+"西 (&larr;), ");
 		}
 		qwerty=$("#cangoto").html();
 		$("#cangoto").html(qwerty.substr(0,$("#cangoto").html().length-2));
